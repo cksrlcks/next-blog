@@ -1,16 +1,32 @@
 {
+  "name": "next-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "babel-plugin-inline-react-svg": "^1.1.1",
+    "babel-plugin-styled-components": "^1.10.7",
+    "contentful": "^7.14.0",
+    "dotenv": "^8.2.0",
+    "masonry-layout": "^4.2.2",
     "next": "^9.3.1",
+    "node-sass": "^4.13.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "sass": "^1.26.3",
+    "styled-components": "^5.0.1"
   },
-  "name": "next-blog",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.4.0",
+    "nodemon": "^2.0.2",
+    "webpack": "^4.41.6"
+  }
 }
