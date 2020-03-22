@@ -2,6 +2,7 @@ body{
     font-family:  -apple-system,BlinkMacSystemFont, Noto sans Korean, Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     color:#2d2f31;
     font-size:14px;
+    -webkit-font-smoothing: antialiased;
 }
 a{
     color:#2d2f31;
@@ -9,5 +10,9 @@ a{
 }
 .global-inner{
     max-width:960px;
+    margin:0 auto;
+}
+.list-inner{
+    max-width:640px;
     margin:0 auto;
 }

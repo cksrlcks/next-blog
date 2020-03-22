@@ -341,7 +341,7 @@ const Nav = () => {
 const Header = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.header.withConfig({
   displayName: "header__Header",
   componentId: "gpyfz6-0"
-})(["background:#fff;border-bottom:1px solid #eee;font-size:1.14em;.global-inner{display:flex;justify-content:space-between;align-item:center;padding:2em 0 1.8em;transition:all 0.2s ease;@media (max-width:968px){padding:1.8em 1em 1.6em;}@media (max-width:768px){padding:1.6em 1em 1.4em;}.logo{height:1.8em;transition:all 0.2s ease;@media (max-width:968px){height:1.6em;}@media (max-width:768px){height:1.4em;}}nav{line-height:1.8em;display:flex;align-item:center;a{display:block;margin-left:2em;color:#555;&.active{color:rgb(34,184,207);}@media (max-width:768px){font-size:0.95em;}}}}"]);
+})(["background:#fff;border-bottom:1px solid #eee;font-size:1.14em;.global-inner{display:flex;justify-content:space-between;align-item:center;padding:2em 0 1.8em;transition:all 0.2s ease;@media (max-width:968px){padding:1.8em 1em 1.6em;}@media (max-width:768px){padding:1.6em 1em 1.4em;}.logo{height:1.8em;transition:all 0.2s ease;@media (max-width:968px){height:1.6em;}@media (max-width:768px){height:1.4em;}}nav{line-height:1.8em;display:flex;align-item:center;a{display:block;margin-left:2em;color:#8794A3;transition:color 0.2s;&:hover{color:#435061}&.active{color:rgb(34,184,207);}@media (max-width:768px){font-size:0.95em;}}}}"]);
 const WritePost = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.button.withConfig({
   displayName: "header__WritePost",
   componentId: "gpyfz6-1"
@@ -360,6 +360,17 @@ const WritePost = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.butto
 
 /***/ }),
 
+/***/ "./css/markup.scss":
+/*!*************************!*\
+  !*** ./css/markup.scss ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./css/reset.css":
 /*!***********************!*\
   !*** ./css/reset.css ***!
@@ -368,6 +379,28 @@ const WritePost = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.butto
 /***/ (function(module, exports) {
 
 
+
+/***/ }),
+
+/***/ "./fontawsome.js":
+/*!***********************!*\
+  !*** ./fontawsome.js ***!
+  \***********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "@fortawesome/fontawesome-svg-core");
+/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "@fortawesome/free-solid-svg-icons");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1__);
+
+
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__["library"].add({
+  faTag: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1__["faTag"],
+  faClock: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1__["faClock"]
+});
 
 /***/ }),
 
@@ -422,7 +455,7 @@ const Layout = ({
 const Container = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "layout__Container",
   componentId: "nvvec4-0"
-})(["margin:2em auto 5em;min-height:60vh;"]);
+})(["margin:2em auto 5em;min-height:80vh;"]);
 
 /***/ }),
 
@@ -2368,11 +2401,16 @@ if (false) {} else {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _layout_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layout/layout */ "./layout/layout.js");
-/* harmony import */ var _css_reset_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/reset.css */ "./css/reset.css");
-/* harmony import */ var _css_reset_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_reset_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _css_layout_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/layout.scss */ "./css/layout.scss");
-/* harmony import */ var _css_layout_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_layout_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_app_polyfill_ie11__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-app-polyfill/ie11 */ "react-app-polyfill/ie11");
+/* harmony import */ var react_app_polyfill_ie11__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_app_polyfill_ie11__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _layout_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../layout/layout */ "./layout/layout.js");
+/* harmony import */ var _css_reset_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/reset.css */ "./css/reset.css");
+/* harmony import */ var _css_reset_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_reset_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _css_layout_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/layout.scss */ "./css/layout.scss");
+/* harmony import */ var _css_layout_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_layout_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _css_markup_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../css/markup.scss */ "./css/markup.scss");
+/* harmony import */ var _css_markup_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_css_markup_scss__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _fontawsome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../fontawsome */ "./fontawsome.js");
 var _jsxFileName = "/Users/chanki/react/next-blog/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -2383,20 +2421,23 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 
+
+
+
 const App = ({
   Component,
   pageProps
 }) => {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_layout_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_layout_layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 12
     },
     __self: undefined
   }, __jsx(Component, _extends({}, pageProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 13
     },
     __self: undefined
   }))));
@@ -2415,6 +2456,28 @@ const App = ({
 
 module.exports = __webpack_require__(/*! private-next-pages/_app.js */"./pages/_app.js");
 
+
+/***/ }),
+
+/***/ "@fortawesome/fontawesome-svg-core":
+/*!****************************************************!*\
+  !*** external "@fortawesome/fontawesome-svg-core" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/fontawesome-svg-core");
+
+/***/ }),
+
+/***/ "@fortawesome/free-solid-svg-icons":
+/*!****************************************************!*\
+  !*** external "@fortawesome/free-solid-svg-icons" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/free-solid-svg-icons");
 
 /***/ }),
 
@@ -2459,6 +2522,17 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-app-polyfill/ie11":
+/*!******************************************!*\
+  !*** external "react-app-polyfill/ie11" ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-app-polyfill/ie11");
 
 /***/ }),
 

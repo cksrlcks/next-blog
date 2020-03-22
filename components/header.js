@@ -57,7 +57,11 @@ const Header = styled.header`
             a{
                 display:block;
                 margin-left:2em;
-                color:#555;
+                color:#8794A3;
+                transition: color 0.2s;
+                &:hover{
+                    color:#435061
+                }
                 &.active{
                     color:rgb(34, 184, 207);
                 }

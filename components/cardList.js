@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styled from 'styled-components';
+import formatDate from '../components/renderDate';
 
 const CardList = ({ item }) => {
     const { title, summary, featuredImage } = item.fields;
@@ -9,14 +10,6 @@ const CardList = ({ item }) => {
     const pageType = postType.replace('Post', '')
 
     const featuredImageUrl = featuredImage && featuredImage.fields.file.url;
-    const formatDate = date => {
-        const stringDate = new Date(date);
-        const year = stringDate.getFullYear();
-        const month = stringDate.getMonth();
-        const day = stringDate.getDate();
-
-        return (year + '년 ' + month + '월 ' + day + '일');
-    }
 
     return (
         <Card className="grid-item">
@@ -76,7 +69,7 @@ const Card = styled.div`
             padding:1.2em 1.2em;
             box-sizing:border-box;
             .title{
-                color:#212529;
+                color:#223141;
                 font-weight:500;
                 margin-bottom:0.4em;
                 text-overflow:ellipsis;
@@ -85,7 +78,8 @@ const Card = styled.div`
             }
             .summary{
                 font-size:13px;
-                color:#495057;
+                color:#8794A3;
+                
                 line-height:1.4em;
                 display:-webkit-box;
                 -webkit-line-clamp:3;
@@ -101,7 +95,7 @@ const Card = styled.div`
             border-top:1px solid #eee;
             padding:1.2em;
             font-size:13px;
-            color:#888;
+            color:#8794A3;
         }
     }
 `

@@ -1,0 +1,59 @@
+.post-body{
+    font-size: 1.125em;
+    color: rgb(52, 58, 64);
+    line-height: 1.85;
+    letter-spacing: -0.02em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+
+    $base-font-size: 18px;
+    $heading-scale: 8;
+
+    @for $i from 1 through 6 {
+        h#{$i} {
+            font-size: $base-font-size + $heading-scale * (6 - $i);
+        }
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        font-weight:bold;
+        line-height: 1.2em;
+    }
+    p{
+        margin:1em 0;
+    }
+    img{
+        max-width:100%;
+        height:auto;
+        border-radius: 4px;
+    }
+    hr{
+        height: 1px;
+        width: 100%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        border-width: initial;
+        border-style: none;
+        border-color: initial;
+        border-image: initial;
+        background: #eee;
+    }
+    blockquote{
+        margin:2em 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        color: #212529;
+        border-left: 4px solid #0094ff;
+        background:#f7f9fd;
+        padding: 1rem 1rem 1rem 2rem;
+    }
+    a{
+        color:rgb(34, 184, 207);
+    }
+    strong{
+        font-weight:bold;
+    }
+    em{
+        font-style: italic;
+    }
+}

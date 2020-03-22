@@ -18,5 +18,5 @@ export default Layout;
 
 const Container = styled.div`
     margin:2em auto 5em;
-    min-height:60vh;
+    min-height:80vh;
 `
