@@ -10,8 +10,8 @@ module.exports = {
         return config
     },
     env: {
-        space: 'szikisnpiddf',
-        accessToken: 'NHo2ByFSfsVvVZpuNEsqdr7aC53bcsA89jOGGzSLYKk'
+        CONTENTFUL_SPACE_ID: 'szikisnpiddf',
+        CONTENTFUL_ACCESS_TOKEN: 'NHo2ByFSfsVvVZpuNEsqdr7aC53bcsA89jOGGzSLYKk'
     }
 }
 

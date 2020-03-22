@@ -1,7 +1,7 @@
 import ActiveLink from './activeLink';
 import Link from 'next/link'
 import styled from 'styled-components';
-import Logo from '../public/img/logo.svg';
+import Logo from '../components/logo';
 
 const Nav = () => {
     return (
@@ -39,17 +39,6 @@ const Header = styled.header`
             padding:1.6em 1em 1.4em;
         }
 
-        .logo{
-            height:1.8em;
-            transition:all 0.2s ease;
-            @media (max-width: 968px) {
-                height:1.6em;
-            }
-            
-            @media (max-width: 768px) {
-                height:1.4em;
-            }
-        }
         nav{
             line-height:1.8em;
             display:flex;

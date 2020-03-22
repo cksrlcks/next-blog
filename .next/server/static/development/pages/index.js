@@ -88,467 +88,331 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/activeLink.js":
+/***/ "./components/cardList.js":
+/*!********************************!*\
+  !*** ./components/cardList.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_renderDate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/renderDate */ "./components/renderDate.js");
+var _jsxFileName = "/Users/chanki/react/next-blog/components/cardList.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+const CardList = ({
+  item
+}) => {
+  const {
+    title,
+    summary,
+    featuredImage
+  } = item.fields;
+  const {
+    updatedAt,
+    id,
+    contentType
+  } = item.sys;
+  const postType = contentType.sys.id;
+  const pageType = postType.replace('Post', '');
+  const featuredImageUrl = featuredImage && featuredImage.fields.file.url;
+  return __jsx(Card, {
+    className: "grid-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "card-wrapper",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: undefined
+  }, featuredImage && __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: `/${pageType}/[id]`,
+    as: `/${pageType}/${id}`,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }, __jsx("a", {
+    className: "feature-img",
+    style: {
+      backgroundImage: "url(" + featuredImageUrl + ")"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  })), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: `/${pageType}/[id]`,
+    as: `/${pageType}/${id}`,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, __jsx("a", {
+    className: "content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, __jsx("h4", {
+    className: "title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: undefined
+  }, title), __jsx("p", {
+    className: "summary",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: undefined
+  }, summary))), __jsx("div", {
+    className: "date",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: undefined
+  }, Object(_components_renderDate__WEBPACK_IMPORTED_MODULE_3__["default"])(updatedAt))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CardList);
+const Card = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
+  displayName: "cardList__Card",
+  componentId: "sc-618xny-0"
+})(["width:33.333%;box-sizing:border-box;padding:0.6em;@media (max-width:968px){width:50%;}@media (max-width:768px){width:100%;}.card-wrapper{display:block;background:#fff;height:100%;border-radius:4px;overflow:hidden;border:1px solid #eee;box-shadow:3px 3px 10px rgba(0,0,0,0.015);transition:all 0.2s ease;position:relative;&:hover{border-color:#ddd;box-shadow:3px 3px 20px rgba(0,0,0,0.035);transform:translateY(-5px)}.feature-img{width:100%;padding-top:52%;position:relative;display:block;background-position:center;background-size:cover;}.content{display:block;padding:1.2em 1.2em;box-sizing:border-box;.title{color:#223141;font-weight:500;margin-bottom:0.4em;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}.summary{font-size:13px;color:#8794A3;line-height:1.4em;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;text-overflow:ellipsis;overflow:hidden;max-height:4.2em;}}.date{box-sizing:border-box;border-top:1px solid #eee;padding:1.2em;font-size:13px;color:#8794A3;}}"]);
+
+/***/ }),
+
+/***/ "./components/paginator.js":
+/*!*********************************!*\
+  !*** ./components/paginator.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/chanki/react/next-blog/components/paginator.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const Pagination = ({
+  skip,
+  range,
+  handlePaginationChange
+}) => {
+  skip = !!skip ? skip : 0;
+  const {
+    0: page,
+    1: setPageNumber
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(1);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    return setPageNumber(skip);
+  }, [skip]);
+
+  const moveToNextPage = () => {
+    if (page > 1) {
+      handlePaginationChange(page - 1);
+      return setPageNumber(page - 1);
+    }
+
+    return null;
+  };
+
+  const moveToPreviousPage = () => {
+    if (page < range[range.length - 1]) {
+      handlePaginationChange(page + 1);
+      return setPageNumber(page + 1);
+    }
+
+    return null;
+  };
+
+  const moveToPage = pageNumber => {
+    handlePaginationChange(pageNumber);
+    return setPageNumber(pageNumber);
+  };
+
+  const renderPageIndicators = (number, index) => __jsx("li", {
+    key: index,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    className: `pagination-number ${number === page ? 'selected' : ''}`,
+    onClick: () => moveToPage(number),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: undefined
+  }, number));
+
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(PagitionBlock, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: undefined
+  }, range.length > 1 ? __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    className: "pagination-button",
+    onClick: moveToNextPage,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: undefined
+  }, __jsx("span", {
+    className: "pagination-button-label",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: undefined
+  }, "\uC774\uC804"))) : null, range.map(renderPageIndicators), range.length > 1 ? __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    className: "pagination-button",
+    onClick: moveToPreviousPage,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: undefined
+  }, __jsx("span", {
+    className: "pagination-button-label",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: undefined
+  }, "\uB2E4\uC74C"))) : null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Pagination);
+const PagitionBlock = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.ul`
+    margin:2em auto;
+    text-align:center;
+    li{
+        display:inline;
+        a{
+            color:#8794a3;
+            border:1px solid #eef0f2;
+            margin-left:-1px;
+            padding:6px 12px;
+            line-height:1em;
+            background:#fff;
+
+            &.selected{
+                color:#fff;
+                background:rgb(34,184,207);
+                border-color:rgb(34,184,207);
+            }
+
+        }
+        &:first-child a {
+            margin-left:0;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius:4px;
+        }
+        &:last-child a {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius:4px;
+        }
+    }
+
+`;
+
+/***/ }),
+
+/***/ "./components/renderDate.js":
 /*!**********************************!*\
-  !*** ./components/activeLink.js ***!
+  !*** ./components/renderDate.js ***!
   \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/chanki/react/next-blog/components/activeLink.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-
-
-const ActiveLink = (_ref) => {
-  let {
-    router,
-    children
-  } = _ref,
-      props = _objectWithoutProperties(_ref, ["router", "children"]);
-
-  const child = react__WEBPACK_IMPORTED_MODULE_2__["Children"].only(children);
-  let className = child.props.className || null;
-
-  if (router.pathname === props.href && props.activeClassName) {
-    className = `${className !== null ? className : ''} ${props.activeClassName}`.trim();
-  }
-
-  delete props.activeClassName;
-  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, _extends({}, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(child, {
-    className
-  }));
+const formatDate = date => {
+  const stringDate = new Date(date);
+  const year = stringDate.getFullYear();
+  const month = stringDate.getMonth();
+  const day = stringDate.getDate();
+  return year + '년 ' + month + '월 ' + day + '일';
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_0__["withRouter"])(ActiveLink));
+/* harmony default export */ __webpack_exports__["default"] = (formatDate);
 
 /***/ }),
 
-/***/ "./components/footer.js":
-/*!******************************!*\
-  !*** ./components/footer.js ***!
-  \******************************/
+/***/ "./config.js":
+/*!*******************!*\
+  !*** ./config.js ***!
+  \*******************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/chanki/react/next-blog/components/footer.js";
+// import dotenv from 'dotenv';
+// dotenv.config();
+const contentful = __webpack_require__(/*! contentful */ "contentful");
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-const Footer = () => {
-  return __jsx(FooterBlock, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: undefined
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: undefined
-  }, "Copyright \u24D2 2020. All Rights Reserved."));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Footer);
-const FooterBlock = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.footer.withConfig({
-  displayName: "footer__FooterBlock",
-  componentId: "izsnhe-0"
-})(["max-width:960px;border-top:1px solid #eee;padding:2em 0;margin:0 auto;text-align:center;color:#888;"]);
-
-/***/ }),
-
-/***/ "./components/header.js":
-/*!******************************!*\
-  !*** ./components/header.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _activeLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./activeLink */ "./components/activeLink.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_logo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/logo */ "./components/logo.js");
-var _jsxFileName = "/Users/chanki/react/next-blog/components/header.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-const Nav = () => {
-  return __jsx(Header, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "global-inner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: undefined
-  }, __jsx("h1", {
-    className: "logo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: undefined
-  }, __jsx(_components_logo__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "logo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: undefined
-  })))), __jsx("nav", {
-    className: "gnb",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: undefined
-  }, __jsx(_activeLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    href: "/blog",
-    activeClassName: "active",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
-  }, "\uBE14\uB85C\uADF8")), __jsx(_activeLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    href: "/study",
-    activeClassName: "active",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: undefined
-  }, "\uACF5\uBD80")), __jsx(_activeLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    href: "/work",
-    activeClassName: "active",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: undefined
-  }, "\uC791\uC5C5"))), __jsx(WritePost, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
-  }, "Write")));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Nav);
-const Header = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.header.withConfig({
-  displayName: "header__Header",
-  componentId: "gpyfz6-0"
-})(["background:#fff;border-bottom:1px solid #eee;font-size:1.14em;.global-inner{display:flex;justify-content:space-between;align-item:center;padding:2em 0 1.8em;transition:all 0.2s ease;@media (max-width:968px){padding:1.8em 1em 1.6em;}@media (max-width:768px){padding:1.6em 1em 1.4em;}nav{line-height:1.8em;display:flex;align-item:center;a{display:block;margin-left:2em;color:#8794A3;transition:color 0.2s;&:hover{color:#435061}&.active{color:rgb(34,184,207);}@media (max-width:768px){font-size:0.95em;}}}}"]);
-const WritePost = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.button.withConfig({
-  displayName: "header__WritePost",
-  componentId: "gpyfz6-1"
-})(["box-sizing:border-box;height:2.5em;display:inline-block;padding:0 0.875em;border:0.0625em solid #0baa75;border-radius:0.125em;background-image:linear-gradient(0deg,#0eb87f,#14d997);background-size:100% 200%;font-size:0.875em;color:#fff;overflow:hidden;vertical-align:middle;display:none;"]);
-
-/***/ }),
-
-/***/ "./components/logo.js":
-/*!****************************!*\
-  !*** ./components/logo.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/chanki/react/next-blog/components/logo.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-const Logo = () => {
-  return __jsx(LogoSvg, {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 91.31 17.11",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: undefined
-  }, __jsx("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: undefined
-  }, __jsx("g", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: undefined
-  }, __jsx("path", {
-    d: "M10.8.4V13.22H9.12V7.43H1.68v5.79H0V.4H1.68V5.89H9.12V.4Z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: undefined
-  }), __jsx("path", {
-    d: "M12.35,8.64a4.59,4.59,0,1,1,9.17,0,5.31,5.31,0,0,1,0,.68H14A2.92,2.92,0,0,0,17,12.05a2.72,2.72,0,0,0,2.56-1.33h1.68A4.25,4.25,0,0,1,17,13.45,4.56,4.56,0,0,1,12.35,8.64ZM17,5.23A2.91,2.91,0,0,0,14,8h5.91A2.92,2.92,0,0,0,17,5.23Z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: undefined
-  }), __jsx("path", {
-    d: "M22.5,8.64A4.56,4.56,0,0,1,27,3.84a3.67,3.67,0,0,1,3.24,1.59V4.07h1.65v9.15H30.27V11.86A3.67,3.67,0,0,1,27,13.45,4.56,4.56,0,0,1,22.5,8.64Zm7.81,0A3.13,3.13,0,0,0,27.17,5.3a3.08,3.08,0,0,0-3.06,3.34A3.09,3.09,0,0,0,27.17,12,3.14,3.14,0,0,0,30.31,8.64Z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: undefined
-  }), __jsx("path", {
-    d: "M42.44,4.07l-3.88,9.15H36.82L33,4.07h1.79l3,7.28,3-7.28Z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: undefined
-  }), __jsx("path", {
-    d: "M52.18,4.07l-5.72,13H44.8L46.61,13l-3.92-9H44.5l2.94,7.2,3-7.2Z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
-  }), __jsx("path", {
-    d: "M54.83,11.86v1.36H53.18V0h1.65V5.43a3.7,3.7,0,0,1,3.25-1.59,4.57,4.57,0,0,1,4.53,4.8,4.57,4.57,0,0,1-4.53,4.81A3.7,3.7,0,0,1,54.83,11.86ZM61,8.64A3.08,3.08,0,0,0,57.94,5.3,3.13,3.13,0,0,0,54.8,8.64,3.14,3.14,0,0,0,57.94,12,3.08,3.08,0,0,0,61,8.64Z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: undefined
-  }), __jsx("path", {
-    d: "M63.6,8.64a4.59,4.59,0,1,1,9.17,0,5.31,5.31,0,0,1,0,.68H65.25a2.91,2.91,0,0,0,2.94,2.73,2.7,2.7,0,0,0,2.56-1.33h1.68a4.24,4.24,0,0,1-4.24,2.73A4.56,4.56,0,0,1,63.6,8.64Zm4.59-3.41A2.89,2.89,0,0,0,65.25,8h5.9A2.91,2.91,0,0,0,68.19,5.23Z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: undefined
-  }), __jsx("path", {
-    d: "M73.74,8.64a4.57,4.57,0,0,1,4.53-4.8,3.68,3.68,0,0,1,3.25,1.59V4.07h1.65v9.15H81.52V11.86a3.68,3.68,0,0,1-3.25,1.59A4.57,4.57,0,0,1,73.74,8.64Zm7.81,0A3.13,3.13,0,0,0,78.42,5.3a3.08,3.08,0,0,0-3.06,3.34A3.09,3.09,0,0,0,78.42,12,3.14,3.14,0,0,0,81.55,8.64Z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }), __jsx("path", {
-    d: "M86.77,4.07v1.4a3.78,3.78,0,0,1,3.3-1.63A3.69,3.69,0,0,1,91.31,4V5.57A3.26,3.26,0,0,0,90,5.31a3.16,3.16,0,0,0-3.18,3.17v4.74H85.12V4.07Z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
-  }))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Logo);
-const LogoSvg = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.svg.withConfig({
-  displayName: "logo__LogoSvg",
-  componentId: "sc-33u84s-0"
-})(["fill:#444;height:1.8em;transition:all 0.2s ease;@media (max-width:968px){height:1.6em;}@media (max-width:768px){height:1.4em;}"]);
-
-/***/ }),
-
-/***/ "./css/layout.scss":
-/*!*************************!*\
-  !*** ./css/layout.scss ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./css/markup.scss":
-/*!*************************!*\
-  !*** ./css/markup.scss ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./css/reset.css":
-/*!***********************!*\
-  !*** ./css/reset.css ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./fontawsome.js":
-/*!***********************!*\
-  !*** ./fontawsome.js ***!
-  \***********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "@fortawesome/fontawesome-svg-core");
-/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "@fortawesome/free-solid-svg-icons");
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1__);
-
-
-_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__["library"].add({
-  faTag: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1__["faTag"],
-  faClock: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1__["faClock"]
+const client = contentful.createClient({
+  space: "szikisnpiddf",
+  accessToken: "NHo2ByFSfsVvVZpuNEsqdr7aC53bcsA89jOGGzSLYKk"
 });
-
-/***/ }),
-
-/***/ "./layout/layout.js":
-/*!**************************!*\
-  !*** ./layout/layout.js ***!
-  \**************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/header */ "./components/header.js");
-/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/footer */ "./components/footer.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/chanki/react/next-blog/layout/layout.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-const Layout = ({
-  children
-}) => {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: undefined
-  }), __jsx(Container, {
-    className: "global-inner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: undefined
-  }, children), __jsx(_components_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Layout);
-const Container = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
-  displayName: "layout__Container",
-  componentId: "nvvec4-0"
-})(["margin:2em auto 5em;min-height:80vh;"]);
+/* harmony default export */ __webpack_exports__["default"] = (client);
 
 /***/ }),
 
@@ -2483,10 +2347,10 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./pages/_app.js":
-/*!***********************!*\
-  !*** ./pages/_app.js ***!
-  \***********************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2494,83 +2358,142 @@ if (false) {} else {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_app_polyfill_ie11__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-app-polyfill/ie11 */ "react-app-polyfill/ie11");
-/* harmony import */ var react_app_polyfill_ie11__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_app_polyfill_ie11__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _layout_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../layout/layout */ "./layout/layout.js");
-/* harmony import */ var _css_reset_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/reset.css */ "./css/reset.css");
-/* harmony import */ var _css_reset_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_reset_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _css_layout_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/layout.scss */ "./css/layout.scss");
-/* harmony import */ var _css_layout_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_layout_scss__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _css_markup_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../css/markup.scss */ "./css/markup.scss");
-/* harmony import */ var _css_markup_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_css_markup_scss__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _fontawsome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../fontawsome */ "./fontawsome.js");
-var _jsxFileName = "/Users/chanki/react/next-blog/pages/_app.js";
-
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_cardList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/cardList */ "./components/cardList.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_paginator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/paginator */ "./components/paginator.js");
+var _jsxFileName = "/Users/chanki/react/next-blog/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 
 
 
 
 
+const calculateRange = length => Array.from({
+  length
+}, (v, k) => k + 1);
 
+function Home(props) {
+  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
+  const total = props.total;
+  const limit = props.limit;
+  const rangeLimit = Math.ceil(total / limit);
+  const range = calculateRange(rangeLimit);
+  const {
+    0: page,
+    1: updatePage
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(!!props.page ? props.page : 1);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    // push를 사용하면 클라이언트사이드에서 라우팅을 실행함
+    void router.push({
+      pathname: '/',
+      query: {
+        page: page
+      }
+    });
+  }, [page]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    var grid = document.querySelector('.grid');
+    var msnry = new Masonry(grid, {
+      itemSelector: '.grid-item'
+    });
+  });
+  /* Pagination 컴포넌트에서의 page state의 변화 감지해서 리랜더링하기*/
 
-const App = ({
-  Component,
-  pageProps
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(CardContainer, {
+    className: "grid",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, props.items.map(item => __jsx(_components_cardList__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    item: item,
+    key: item.sys.id,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }))), __jsx("div", {
+    className: "pagination",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, __jsx(_components_paginator__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    handlePaginationChange: event => updatePage(event),
+    range: range,
+    skip: page,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  })));
+}
+
+Home.getInitialProps = async ({
+  query
 }) => {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_layout_layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
-  }, __jsx(Component, _extends({}, pageProps, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: undefined
-  }))));
+  let page = 1; //클라이언트사이드에서 재랜더링되면서 쿼리 파라미터가 입력됫을경우 page값을 업데이트
+
+  if (query.page) {
+    page = parseInt(query.page + '');
+  }
+
+  const limit = 12;
+  const {
+    items,
+    total,
+    skip
+  } = await _config__WEBPACK_IMPORTED_MODULE_3__["default"].getEntries({
+    skip: (page - 1) * limit,
+    limit
+  });
+  return {
+    page,
+    items,
+    total,
+    skip,
+    limit
+  };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (App);
+/* harmony default export */ __webpack_exports__["default"] = (Home);
+const CardContainer = styled_components__WEBPACK_IMPORTED_MODULE_4___default.a.div.withConfig({
+  displayName: "pages__CardContainer",
+  componentId: "sc-1cl0c4r-0"
+})(["padding:2em 0 1em;@media (max-width:968px){padding:0.5em 0;}"]);
 
 /***/ }),
 
-/***/ 0:
-/*!****************************************!*\
-  !*** multi private-next-pages/_app.js ***!
-  \****************************************/
+/***/ 4:
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! private-next-pages/_app.js */"./pages/_app.js");
+module.exports = __webpack_require__(/*! /Users/chanki/react/next-blog/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
 
-/***/ "@fortawesome/fontawesome-svg-core":
-/*!****************************************************!*\
-  !*** external "@fortawesome/fontawesome-svg-core" ***!
-  \****************************************************/
+/***/ "contentful":
+/*!*****************************!*\
+  !*** external "contentful" ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@fortawesome/fontawesome-svg-core");
-
-/***/ }),
-
-/***/ "@fortawesome/free-solid-svg-icons":
-/*!****************************************************!*\
-  !*** external "@fortawesome/free-solid-svg-icons" ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@fortawesome/free-solid-svg-icons");
+module.exports = require("contentful");
 
 /***/ }),
 
@@ -2618,17 +2541,6 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "react-app-polyfill/ie11":
-/*!******************************************!*\
-  !*** external "react-app-polyfill/ie11" ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-app-polyfill/ie11");
-
-/***/ }),
-
 /***/ "styled-components":
 /*!************************************!*\
   !*** external "styled-components" ***!
@@ -2652,4 +2564,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=_app.js.map
+//# sourceMappingURL=index.js.map
