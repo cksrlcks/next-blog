@@ -337,7 +337,7 @@ var Logo = function Logo() {
 var LogoSvg = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].svg.withConfig({
   displayName: "logo__LogoSvg",
   componentId: "sc-33u84s-0"
-})(["fill:#444;height:1.8em;transition:all 0.2s ease;@media (max-width:968px){height:1.6em;}@media (max-width:768px){height:1.4em;}"]);
+})(["fill:#444;height:1.8em;@media (max-width:968px){height:1.6em;}@media (max-width:768px){height:1.4em;}"]);
 
 /***/ }),
 

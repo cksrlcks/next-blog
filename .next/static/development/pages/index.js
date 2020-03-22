@@ -123,25 +123,12 @@ var Card = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withCon
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 var _jsxFileName = "/Users/chanki/react/next-blog/components/paginator.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin:2em auto;\n    text-align:center;\n    li{\n        display:inline;\n        a{\n            color:#8794a3;\n            border:1px solid #eef0f2;\n            margin-left:-1px;\n            padding:6px 12px;\n            line-height:1em;\n            background:#fff;\n\n            &.selected{\n                color:#fff;\n                background:rgb(34,184,207);\n                border-color:rgb(34,184,207);\n            }\n\n        }\n        &:first-child a {\n            margin-left:0;\n            border-top-left-radius: 4px;\n            border-bottom-left-radius:4px;\n        }\n        &:last-child a {\n            border-top-right-radius: 4px;\n            border-bottom-right-radius:4px;\n        }\n    }\n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
@@ -151,11 +138,11 @@ var Pagination = function Pagination(_ref) {
       handlePaginationChange = _ref.handlePaginationChange;
   skip = !!skip ? skip : 0;
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(1),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(1),
       page = _useState[0],
       setPageNumber = _useState[1];
 
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     return setPageNumber(skip);
   }, [skip]);
 
@@ -204,7 +191,7 @@ var Pagination = function Pagination(_ref) {
     }, number));
   };
 
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(PagitionBlock, {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(PagitionBlock, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 48
@@ -258,7 +245,10 @@ var Pagination = function Pagination(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Pagination);
-var PagitionBlock = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].ul(_templateObject());
+var PagitionBlock = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].ul.withConfig({
+  displayName: "paginator__PagitionBlock",
+  componentId: "sc-41oh1a-0"
+})(["margin:2em auto;text-align:center;li{display:inline;a{color:#8794a3;border:1px solid #eef0f2;margin-left:-1px;padding:6px 12px;line-height:1em;background:#fff;&.selected{color:#fff;background:rgb(34,184,207);border-color:rgb(34,184,207);}}&:first-child a{margin-left:0;border-top-left-radius:4px;border-bottom-left-radius:4px;}&:last-child a{border-top-right-radius:4px;border-bottom-right-radius:4px;}}"]);
 
 /***/ }),
 
@@ -422,30 +412,6 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js ***!
-  \**************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _taggedTemplateLiteral; });
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
-
-  return Object.freeze(Object.defineProperties(strings, {
-    raw: {
-      value: Object.freeze(raw)
-    }
-  }));
-}
 
 /***/ }),
 
@@ -3481,7 +3447,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var qs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(qs__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var lodash_isPlainObject__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash/isPlainObject */ "./node_modules/lodash/isPlainObject.js");
 /* harmony import */ var lodash_isPlainObject__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_isPlainObject__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! os */ 3);
+/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! os */ 2);
 /* harmony import */ var os__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(os__WEBPACK_IMPORTED_MODULE_3__);
 
 
@@ -16688,7 +16654,7 @@ var CardContainer = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].di
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fchanki%2Freact%2Fnext-blog%2Fpages%2Findex.js ***!
   \*************************************************************************************************************************/
@@ -16700,7 +16666,7 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!********************!*\
   !*** os (ignored) ***!
   \********************/
@@ -16722,5 +16688,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

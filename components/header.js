@@ -49,6 +49,7 @@ const Header = styled.header`
                 color:#8794A3;
                 transition: color 0.2s;
                 &:hover{
+                    
                     color:#435061
                 }
                 &.active{

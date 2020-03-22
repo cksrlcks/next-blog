@@ -25,12 +25,11 @@ export default Logo;
 const LogoSvg = styled.svg`
     fill:#444;
     height:1.8em;
-            transition:all 0.2s ease;
-            @media (max-width: 968px) {
-                height:1.6em;
-            }
-            
-            @media (max-width: 768px) {
-                height:1.4em;
-            }
+    @media (max-width: 968px) {
+        height:1.6em;
+    }
+    
+    @media (max-width: 768px) {
+        height:1.4em;
+    }
 `

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -339,38 +339,10 @@ const Pagination = ({
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Pagination);
-const PagitionBlock = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.ul`
-    margin:2em auto;
-    text-align:center;
-    li{
-        display:inline;
-        a{
-            color:#8794a3;
-            border:1px solid #eef0f2;
-            margin-left:-1px;
-            padding:6px 12px;
-            line-height:1em;
-            background:#fff;
-
-            &.selected{
-                color:#fff;
-                background:rgb(34,184,207);
-                border-color:rgb(34,184,207);
-            }
-
-        }
-        &:first-child a {
-            margin-left:0;
-            border-top-left-radius: 4px;
-            border-bottom-left-radius:4px;
-        }
-        &:last-child a {
-            border-top-right-radius: 4px;
-            border-bottom-right-radius:4px;
-        }
-    }
-
-`;
+const PagitionBlock = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.ul.withConfig({
+  displayName: "paginator__PagitionBlock",
+  componentId: "sc-41oh1a-0"
+})(["margin:2em auto;text-align:center;li{display:inline;a{color:#8794a3;border:1px solid #eef0f2;margin-left:-1px;padding:6px 12px;line-height:1em;background:#fff;&.selected{color:#fff;background:rgb(34,184,207);border-color:rgb(34,184,207);}}&:first-child a{margin-left:0;border-top-left-radius:4px;border-bottom-left-radius:4px;}&:last-child a{border-top-right-radius:4px;border-bottom-right-radius:4px;}}"]);
 
 /***/ }),
 
@@ -2474,7 +2446,7 @@ const CardContainer = styled_components__WEBPACK_IMPORTED_MODULE_4___default.a.d
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

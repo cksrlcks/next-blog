@@ -7,8 +7,7 @@
                 "displayName": true,
                 "preprocess": false
             },
-        ],
-        "inline-react-svg",
+        ]
     ],
     "presets": [
         "next/babel"
