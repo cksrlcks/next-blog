@@ -33,7 +33,7 @@ var ActiveLink = function ActiveLink(_ref) {
   var child = react__WEBPACK_IMPORTED_MODULE_4__["Children"].only(children);
   var className = child.props.className || null;
 
-  if (router.pathname === props.href && props.activeClassName) {
+  if ("/".concat(router.pathname.split("/")[1]) === props.href && props.activeClassName) {
     className = "".concat(className !== null ? className : '', " ").concat(props.activeClassName).trim();
   }
 
@@ -140,6 +140,7 @@ var Nav = function Nav() {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    prefetch: true,
     href: "/",
     __source: {
       fileName: _jsxFileName,
@@ -167,6 +168,7 @@ var Nav = function Nav() {
     },
     __self: this
   }, __jsx(_activeLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    prefetch: true,
     href: "/blog",
     activeClassName: "active",
     __source: {
@@ -181,6 +183,7 @@ var Nav = function Nav() {
     },
     __self: this
   }, "\uBE14\uB85C\uADF8")), __jsx(_activeLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    prefetch: true,
     href: "/study",
     activeClassName: "active",
     __source: {
@@ -195,6 +198,7 @@ var Nav = function Nav() {
     },
     __self: this
   }, "\uACF5\uBD80")), __jsx(_activeLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    prefetch: true,
     href: "/work",
     activeClassName: "active",
     __source: {
@@ -250,6 +254,7 @@ var Logo = function Logo() {
   return __jsx(LogoSvg, {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 91.31 17.11",
+    height: "1.8",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
@@ -446,6 +451,67 @@ if (true) {
       /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../node_modules/postcss-loader/src??__nextjs_postcss!../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./markup.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./css/markup.scss",
       function () {
         var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../node_modules/postcss-loader/src??__nextjs_postcss!../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./markup.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./css/markup.scss");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./css/nprogress.css":
+/*!***************************!*\
+  !*** ./css/nprogress.css ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-5-1!../node_modules/postcss-loader/src??__nextjs_postcss!./nprogress.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./css/nprogress.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-5-1!../node_modules/postcss-loader/src??__nextjs_postcss!./nprogress.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./css/nprogress.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-5-1!../node_modules/postcss-loader/src??__nextjs_postcss!./nprogress.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./css/nprogress.css");
 
         if (typeof newContent === 'string') {
           newContent = [[module.i, newContent, '']];
@@ -14414,6 +14480,20 @@ defineWellKnownSymbol('replaceAll');
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./css/nprogress.css":
+/*!***************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-5-1!./node_modules/postcss-loader/src??__nextjs_postcss!./css/nprogress.css ***!
+  \***************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, "/* Make clicks pass-through */\n#nprogress {\n    pointer-events: none;\n  }\n  \n  #nprogress .bar {\n    background: #29d;\n  \n    position: fixed;\n    z-index: 1031;\n    top: 0;\n    left: 0;\n  \n    width: 100%;\n    height: 2px;\n  }\n  \n  /* Fancy blur effect */\n  #nprogress .peg {\n    display: block;\n    position: absolute;\n    right: 0px;\n    width: 100px;\n    height: 100%;\n    box-shadow: 0 0 10px #29d, 0 0 5px #29d;\n    opacity: 1;\n    transform: rotate(3deg) translate(0px, -4px);\n  }\n  \n  /* Remove these to get rid of the spinner */\n  #nprogress .spinner {\n    display: block;\n    position: fixed;\n    z-index: 1031;\n    top: 15px;\n    right: 15px;\n  }\n  \n  #nprogress .spinner-icon {\n    width: 18px;\n    height: 18px;\n    box-sizing: border-box;\n  \n    border: solid 2px transparent;\n    border-top-color: #29d;\n    border-left-color: #29d;\n    border-radius: 50%;\n  \n    -webkit-animation: nprogress-spinner 400ms linear infinite;\n    animation: nprogress-spinner 400ms linear infinite;\n  }\n  \n  .nprogress-custom-parent {\n    overflow: hidden;\n    position: relative;\n  }\n  \n  .nprogress-custom-parent #nprogress .spinner,\n  .nprogress-custom-parent #nprogress .bar {\n    position: absolute;\n  }\n  \n  @-webkit-keyframes nprogress-spinner {\n    0% {\n      -webkit-transform: rotate(0deg);\n    }\n    100% {\n      -webkit-transform: rotate(360deg);\n    }\n  }\n  @keyframes nprogress-spinner {\n    0% {\n      transform: rotate(0deg);\n    }\n    100% {\n      transform: rotate(360deg);\n    }\n  }", "",{"version":3,"sources":["nprogress.css"],"names":[],"mappings":"AAAA,6BAA6B;AAC7B;IACI,oBAAoB;EACtB;;EAEA;IACE,gBAAgB;;IAEhB,eAAe;IACf,aAAa;IACb,MAAM;IACN,OAAO;;IAEP,WAAW;IACX,WAAW;EACb;;EAEA,sBAAsB;EACtB;IACE,cAAc;IACd,kBAAkB;IAClB,UAAU;IACV,YAAY;IACZ,YAAY;IACZ,uCAAuC;IACvC,UAAU;IAIV,4CAA4C;EAC9C;;EAEA,2CAA2C;EAC3C;IACE,cAAc;IACd,eAAe;IACf,aAAa;IACb,SAAS;IACT,WAAW;EACb;;EAEA;IACE,WAAW;IACX,YAAY;IACZ,sBAAsB;;IAEtB,6BAA6B;IAC7B,sBAAsB;IACtB,uBAAuB;IACvB,kBAAkB;;IAElB,0DAA0D;IAC1D,kDAAkD;EACpD;;EAEA;IACE,gBAAgB;IAChB,kBAAkB;EACpB;;EAEA;;IAEE,kBAAkB;EACpB;;EAEA;IACE;MACE,+BAA+B;IACjC;IACA;MACE,iCAAiC;IACnC;EACF;EACA;IACE;MACE,uBAAuB;IACzB;IACA;MACE,yBAAyB;IAC3B;EACF","file":"nprogress.css","sourcesContent":["/* Make clicks pass-through */\n#nprogress {\n    pointer-events: none;\n  }\n  \n  #nprogress .bar {\n    background: #29d;\n  \n    position: fixed;\n    z-index: 1031;\n    top: 0;\n    left: 0;\n  \n    width: 100%;\n    height: 2px;\n  }\n  \n  /* Fancy blur effect */\n  #nprogress .peg {\n    display: block;\n    position: absolute;\n    right: 0px;\n    width: 100px;\n    height: 100%;\n    box-shadow: 0 0 10px #29d, 0 0 5px #29d;\n    opacity: 1;\n  \n    -webkit-transform: rotate(3deg) translate(0px, -4px);\n    -ms-transform: rotate(3deg) translate(0px, -4px);\n    transform: rotate(3deg) translate(0px, -4px);\n  }\n  \n  /* Remove these to get rid of the spinner */\n  #nprogress .spinner {\n    display: block;\n    position: fixed;\n    z-index: 1031;\n    top: 15px;\n    right: 15px;\n  }\n  \n  #nprogress .spinner-icon {\n    width: 18px;\n    height: 18px;\n    box-sizing: border-box;\n  \n    border: solid 2px transparent;\n    border-top-color: #29d;\n    border-left-color: #29d;\n    border-radius: 50%;\n  \n    -webkit-animation: nprogress-spinner 400ms linear infinite;\n    animation: nprogress-spinner 400ms linear infinite;\n  }\n  \n  .nprogress-custom-parent {\n    overflow: hidden;\n    position: relative;\n  }\n  \n  .nprogress-custom-parent #nprogress .spinner,\n  .nprogress-custom-parent #nprogress .bar {\n    position: absolute;\n  }\n  \n  @-webkit-keyframes nprogress-spinner {\n    0% {\n      -webkit-transform: rotate(0deg);\n    }\n    100% {\n      -webkit-transform: rotate(360deg);\n    }\n  }\n  @keyframes nprogress-spinner {\n    0% {\n      transform: rotate(0deg);\n    }\n    100% {\n      transform: rotate(360deg);\n    }\n  }"]}]);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./css/reset.css":
 /*!***********************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-5-1!./node_modules/postcss-loader/src??__nextjs_postcss!./css/reset.css ***!
@@ -14451,7 +14531,7 @@ exports.push([module.i, "body {\n  font-family: -apple-system,BlinkMacSystemFont
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".post-body {\n  font-size: 1.125em;\n  color: #343a40;\n  line-height: 1.85;\n  letter-spacing: -0.02em;\n  word-break: keep-all;\n  overflow-wrap: break-word; }\n  .post-body h1 {\n    font-size: 58px; }\n  .post-body h2 {\n    font-size: 50px; }\n  .post-body h3 {\n    font-size: 42px; }\n  .post-body h4 {\n    font-size: 34px; }\n  .post-body h5 {\n    font-size: 26px; }\n  .post-body h6 {\n    font-size: 18px; }\n  .post-body h1, .post-body h2, .post-body h3, .post-body h4, .post-body h5, .post-body h6 {\n    font-weight: bold;\n    line-height: 1.2em; }\n  .post-body p {\n    margin: 1em 0; }\n  .post-body img {\n    max-width: 100%;\n    height: auto;\n    border-radius: 4px; }\n  .post-body hr {\n    height: 1px;\n    width: 100%;\n    margin-top: 2em;\n    margin-bottom: 2em;\n    border-width: medium;\n    border-width: initial;\n    border-style: none;\n    border-color: currentColor;\n    border-color: initial;\n    -o-border-image: none;\n       border-image: none;\n    -o-border-image: initial;\n       border-image: initial;\n    background: #eee; }\n  .post-body blockquote {\n    margin: 2em 0;\n    margin-left: 0px;\n    margin-right: 0px;\n    color: #212529;\n    border-left: 4px solid #0094ff;\n    background: #f7f9fd;\n    padding: 1rem 1rem 1rem 2rem; }\n  .post-body a {\n    color: #22b8cf; }\n  .post-body strong {\n    font-weight: bold; }\n  .post-body em {\n    font-style: italic; }\n", "",{"version":3,"sources":["markup.scss"],"names":[],"mappings":"AAAA;EACI,kBAAkB;EAClB,cAAsB;EACtB,iBAAiB;EACjB,uBAAuB;EACvB,oBAAoB;EACpB,yBAAyB,EAAA;EAN7B;IAaY,eAAsD,EAAA;EAblE;IAaY,eAAsD,EAAA;EAblE;IAaY,eAAsD,EAAA;EAblE;IAaY,eAAsD,EAAA;EAblE;IAaY,eAAsD,EAAA;EAblE;IAaY,eAAsD,EAAA;EAblE;IAkBQ,iBAAgB;IAChB,kBAAkB,EAAA;EAnB1B;IAsBQ,aAAY,EAAA;EAtBpB;IAyBQ,eAAc;IACd,YAAW;IACX,kBAAkB,EAAA;EA3B1B;IA8BQ,WAAW;IACX,WAAW;IACX,eAAe;IACf,kBAAkB;IAClB,oBAAqB;IAArB,qBAAqB;IACrB,kBAAkB;IAClB,0BAAqB;IAArB,qBAAqB;IACrB,qBAAqB;OAArB,kBAAqB;IAArB,wBAAqB;OAArB,qBAAqB;IACrB,gBAAgB,EAAA;EAtCxB;IAyCQ,aAAY;IACZ,gBAAgB;IAChB,iBAAiB;IACjB,cAAc;IACd,8BAA8B;IAC9B,mBAAkB;IAClB,4BAA4B,EAAA;EA/CpC;IAkDQ,cAAuB,EAAA;EAlD/B;IAqDQ,iBAAgB,EAAA;EArDxB;IAwDQ,kBAAkB,EAAA","file":"markup.scss","sourcesContent":[".post-body{\n    font-size: 1.125em;\n    color: rgb(52, 58, 64);\n    line-height: 1.85;\n    letter-spacing: -0.02em;\n    word-break: keep-all;\n    overflow-wrap: break-word;\n\n    $base-font-size: 18px;\n    $heading-scale: 8;\n\n    @for $i from 1 through 6 {\n        h#{$i} {\n            font-size: $base-font-size + $heading-scale * (6 - $i);\n        }\n    }\n\n    h1,h2,h3,h4,h5,h6{\n        font-weight:bold;\n        line-height: 1.2em;\n    }\n    p{\n        margin:1em 0;\n    }\n    img{\n        max-width:100%;\n        height:auto;\n        border-radius: 4px;\n    }\n    hr{\n        height: 1px;\n        width: 100%;\n        margin-top: 2em;\n        margin-bottom: 2em;\n        border-width: initial;\n        border-style: none;\n        border-color: initial;\n        border-image: initial;\n        background: #eee;\n    }\n    blockquote{\n        margin:2em 0;\n        margin-left: 0px;\n        margin-right: 0px;\n        color: #212529;\n        border-left: 4px solid #0094ff;\n        background:#f7f9fd;\n        padding: 1rem 1rem 1rem 2rem;\n    }\n    a{\n        color:rgb(34, 184, 207);\n    }\n    strong{\n        font-weight:bold;\n    }\n    em{\n        font-style: italic;\n    }\n}"]}]);
+exports.push([module.i, ".post-body {\n  font-size: 1.125em;\n  color: #343a40;\n  line-height: 1.85;\n  letter-spacing: -0.02em;\n  word-break: keep-all;\n  overflow-wrap: break-word; }\n  .post-body h1 {\n    font-size: 58px; }\n  .post-body h2 {\n    font-size: 50px; }\n  .post-body h3 {\n    font-size: 42px; }\n  .post-body h4 {\n    font-size: 34px; }\n  .post-body h5 {\n    font-size: 26px; }\n  .post-body h6 {\n    font-size: 18px; }\n  .post-body h1, .post-body h2, .post-body h3, .post-body h4, .post-body h5, .post-body h6 {\n    font-weight: bold;\n    line-height: 1.2em; }\n  .post-body p {\n    margin: 1em 0; }\n  .post-body img {\n    max-width: 100%;\n    height: auto;\n    border-radius: 4px; }\n  .post-body hr {\n    height: 1px;\n    width: 100%;\n    margin-top: 2em;\n    margin-bottom: 2em;\n    border-width: medium;\n    border-width: initial;\n    border-style: none;\n    border-color: currentColor;\n    border-color: initial;\n    -o-border-image: none;\n       border-image: none;\n    -o-border-image: initial;\n       border-image: initial;\n    background: #eee; }\n  .post-body blockquote {\n    margin: 2em 0;\n    margin-left: 0px;\n    margin-right: 0px;\n    color: #212529;\n    border-left: 4px solid #0094ff;\n    background: #f7f9fd;\n    padding: 1rem 1rem 1rem 2rem; }\n  .post-body a {\n    color: #22b8cf; }\n  .post-body strong {\n    font-weight: bold; }\n  .post-body em {\n    font-style: italic; }\n  .post-body .video {\n    position: relative;\n    height: 0;\n    padding-bottom: 56.25%; }\n  .post-body iframe {\n    position: absolute;\n    width: 100%;\n    height: 100%; }\n", "",{"version":3,"sources":["markup.scss"],"names":[],"mappings":"AAAA;EACI,kBAAkB;EAClB,cAAsB;EACtB,iBAAiB;EACjB,uBAAuB;EACvB,oBAAoB;EACpB,yBAAyB,EAAA;EAN7B;IAaY,eAAsD,EAAA;EAblE;IAaY,eAAsD,EAAA;EAblE;IAaY,eAAsD,EAAA;EAblE;IAaY,eAAsD,EAAA;EAblE;IAaY,eAAsD,EAAA;EAblE;IAaY,eAAsD,EAAA;EAblE;IAkBQ,iBAAgB;IAChB,kBAAkB,EAAA;EAnB1B;IAsBQ,aAAY,EAAA;EAtBpB;IAyBQ,eAAc;IACd,YAAW;IACX,kBAAkB,EAAA;EA3B1B;IA8BQ,WAAW;IACX,WAAW;IACX,eAAe;IACf,kBAAkB;IAClB,oBAAqB;IAArB,qBAAqB;IACrB,kBAAkB;IAClB,0BAAqB;IAArB,qBAAqB;IACrB,qBAAqB;OAArB,kBAAqB;IAArB,wBAAqB;OAArB,qBAAqB;IACrB,gBAAgB,EAAA;EAtCxB;IAyCQ,aAAY;IACZ,gBAAgB;IAChB,iBAAiB;IACjB,cAAc;IACd,8BAA8B;IAC9B,mBAAkB;IAClB,4BAA4B,EAAA;EA/CpC;IAkDQ,cAAuB,EAAA;EAlD/B;IAqDQ,iBAAgB,EAAA;EArDxB;IAwDQ,kBAAkB,EAAA;EAxD1B;IA4DQ,kBAAiB;IACjB,SAAQ;IACR,sBAAsB,EAAA;EA9D9B;IAkEQ,kBAAkB;IAClB,WAAU;IACV,YAAW,EAAA","file":"markup.scss","sourcesContent":[".post-body{\n    font-size: 1.125em;\n    color: rgb(52, 58, 64);\n    line-height: 1.85;\n    letter-spacing: -0.02em;\n    word-break: keep-all;\n    overflow-wrap: break-word;\n\n    $base-font-size: 18px;\n    $heading-scale: 8;\n\n    @for $i from 1 through 6 {\n        h#{$i} {\n            font-size: $base-font-size + $heading-scale * (6 - $i);\n        }\n    }\n\n    h1,h2,h3,h4,h5,h6{\n        font-weight:bold;\n        line-height: 1.2em;\n    }\n    p{\n        margin:1em 0;\n    }\n    img{\n        max-width:100%;\n        height:auto;\n        border-radius: 4px;\n    }\n    hr{\n        height: 1px;\n        width: 100%;\n        margin-top: 2em;\n        margin-bottom: 2em;\n        border-width: initial;\n        border-style: none;\n        border-color: initial;\n        border-image: initial;\n        background: #eee;\n    }\n    blockquote{\n        margin:2em 0;\n        margin-left: 0px;\n        margin-right: 0px;\n        color: #212529;\n        border-left: 4px solid #0094ff;\n        background:#f7f9fd;\n        padding: 1rem 1rem 1rem 2rem;\n    }\n    a{\n        color:rgb(34, 184, 207);\n    }\n    strong{\n        font-weight:bold;\n    }\n    em{\n        font-style: italic;\n    }\n\n    .video{\n        position:relative;\n        height:0; \n        padding-bottom: 56.25%;\n    }\n\n    iframe{\n        position: absolute; \n        width:100%; \n        height:100%;\n    }\n}"]}]);
 
 
 /***/ }),
@@ -16848,6 +16928,493 @@ exports.isSuspense = isSuspense;
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/next/node_modules/react-is/cjs/react-is.development.js");
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/nprogress/nprogress.js":
+/*!*********************************************!*\
+  !*** ./node_modules/nprogress/nprogress.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* NProgress, (c) 2013, 2014 Rico Sta. Cruz - http://ricostacruz.com/nprogress
+ * @license MIT */
+
+;(function(root, factory) {
+
+  if (true) {
+    !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else {}
+
+})(this, function() {
+  var NProgress = {};
+
+  NProgress.version = '0.2.0';
+
+  var Settings = NProgress.settings = {
+    minimum: 0.08,
+    easing: 'ease',
+    positionUsing: '',
+    speed: 200,
+    trickle: true,
+    trickleRate: 0.02,
+    trickleSpeed: 800,
+    showSpinner: true,
+    barSelector: '[role="bar"]',
+    spinnerSelector: '[role="spinner"]',
+    parent: 'body',
+    template: '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
+  };
+
+  /**
+   * Updates configuration.
+   *
+   *     NProgress.configure({
+   *       minimum: 0.1
+   *     });
+   */
+  NProgress.configure = function(options) {
+    var key, value;
+    for (key in options) {
+      value = options[key];
+      if (value !== undefined && options.hasOwnProperty(key)) Settings[key] = value;
+    }
+
+    return this;
+  };
+
+  /**
+   * Last number.
+   */
+
+  NProgress.status = null;
+
+  /**
+   * Sets the progress bar status, where `n` is a number from `0.0` to `1.0`.
+   *
+   *     NProgress.set(0.4);
+   *     NProgress.set(1.0);
+   */
+
+  NProgress.set = function(n) {
+    var started = NProgress.isStarted();
+
+    n = clamp(n, Settings.minimum, 1);
+    NProgress.status = (n === 1 ? null : n);
+
+    var progress = NProgress.render(!started),
+        bar      = progress.querySelector(Settings.barSelector),
+        speed    = Settings.speed,
+        ease     = Settings.easing;
+
+    progress.offsetWidth; /* Repaint */
+
+    queue(function(next) {
+      // Set positionUsing if it hasn't already been set
+      if (Settings.positionUsing === '') Settings.positionUsing = NProgress.getPositioningCSS();
+
+      // Add transition
+      css(bar, barPositionCSS(n, speed, ease));
+
+      if (n === 1) {
+        // Fade out
+        css(progress, { 
+          transition: 'none', 
+          opacity: 1 
+        });
+        progress.offsetWidth; /* Repaint */
+
+        setTimeout(function() {
+          css(progress, { 
+            transition: 'all ' + speed + 'ms linear', 
+            opacity: 0 
+          });
+          setTimeout(function() {
+            NProgress.remove();
+            next();
+          }, speed);
+        }, speed);
+      } else {
+        setTimeout(next, speed);
+      }
+    });
+
+    return this;
+  };
+
+  NProgress.isStarted = function() {
+    return typeof NProgress.status === 'number';
+  };
+
+  /**
+   * Shows the progress bar.
+   * This is the same as setting the status to 0%, except that it doesn't go backwards.
+   *
+   *     NProgress.start();
+   *
+   */
+  NProgress.start = function() {
+    if (!NProgress.status) NProgress.set(0);
+
+    var work = function() {
+      setTimeout(function() {
+        if (!NProgress.status) return;
+        NProgress.trickle();
+        work();
+      }, Settings.trickleSpeed);
+    };
+
+    if (Settings.trickle) work();
+
+    return this;
+  };
+
+  /**
+   * Hides the progress bar.
+   * This is the *sort of* the same as setting the status to 100%, with the
+   * difference being `done()` makes some placebo effect of some realistic motion.
+   *
+   *     NProgress.done();
+   *
+   * If `true` is passed, it will show the progress bar even if its hidden.
+   *
+   *     NProgress.done(true);
+   */
+
+  NProgress.done = function(force) {
+    if (!force && !NProgress.status) return this;
+
+    return NProgress.inc(0.3 + 0.5 * Math.random()).set(1);
+  };
+
+  /**
+   * Increments by a random amount.
+   */
+
+  NProgress.inc = function(amount) {
+    var n = NProgress.status;
+
+    if (!n) {
+      return NProgress.start();
+    } else {
+      if (typeof amount !== 'number') {
+        amount = (1 - n) * clamp(Math.random() * n, 0.1, 0.95);
+      }
+
+      n = clamp(n + amount, 0, 0.994);
+      return NProgress.set(n);
+    }
+  };
+
+  NProgress.trickle = function() {
+    return NProgress.inc(Math.random() * Settings.trickleRate);
+  };
+
+  /**
+   * Waits for all supplied jQuery promises and
+   * increases the progress as the promises resolve.
+   *
+   * @param $promise jQUery Promise
+   */
+  (function() {
+    var initial = 0, current = 0;
+
+    NProgress.promise = function($promise) {
+      if (!$promise || $promise.state() === "resolved") {
+        return this;
+      }
+
+      if (current === 0) {
+        NProgress.start();
+      }
+
+      initial++;
+      current++;
+
+      $promise.always(function() {
+        current--;
+        if (current === 0) {
+            initial = 0;
+            NProgress.done();
+        } else {
+            NProgress.set((initial - current) / initial);
+        }
+      });
+
+      return this;
+    };
+
+  })();
+
+  /**
+   * (Internal) renders the progress bar markup based on the `template`
+   * setting.
+   */
+
+  NProgress.render = function(fromStart) {
+    if (NProgress.isRendered()) return document.getElementById('nprogress');
+
+    addClass(document.documentElement, 'nprogress-busy');
+    
+    var progress = document.createElement('div');
+    progress.id = 'nprogress';
+    progress.innerHTML = Settings.template;
+
+    var bar      = progress.querySelector(Settings.barSelector),
+        perc     = fromStart ? '-100' : toBarPerc(NProgress.status || 0),
+        parent   = document.querySelector(Settings.parent),
+        spinner;
+    
+    css(bar, {
+      transition: 'all 0 linear',
+      transform: 'translate3d(' + perc + '%,0,0)'
+    });
+
+    if (!Settings.showSpinner) {
+      spinner = progress.querySelector(Settings.spinnerSelector);
+      spinner && removeElement(spinner);
+    }
+
+    if (parent != document.body) {
+      addClass(parent, 'nprogress-custom-parent');
+    }
+
+    parent.appendChild(progress);
+    return progress;
+  };
+
+  /**
+   * Removes the element. Opposite of render().
+   */
+
+  NProgress.remove = function() {
+    removeClass(document.documentElement, 'nprogress-busy');
+    removeClass(document.querySelector(Settings.parent), 'nprogress-custom-parent');
+    var progress = document.getElementById('nprogress');
+    progress && removeElement(progress);
+  };
+
+  /**
+   * Checks if the progress bar is rendered.
+   */
+
+  NProgress.isRendered = function() {
+    return !!document.getElementById('nprogress');
+  };
+
+  /**
+   * Determine which positioning CSS rule to use.
+   */
+
+  NProgress.getPositioningCSS = function() {
+    // Sniff on document.body.style
+    var bodyStyle = document.body.style;
+
+    // Sniff prefixes
+    var vendorPrefix = ('WebkitTransform' in bodyStyle) ? 'Webkit' :
+                       ('MozTransform' in bodyStyle) ? 'Moz' :
+                       ('msTransform' in bodyStyle) ? 'ms' :
+                       ('OTransform' in bodyStyle) ? 'O' : '';
+
+    if (vendorPrefix + 'Perspective' in bodyStyle) {
+      // Modern browsers with 3D support, e.g. Webkit, IE10
+      return 'translate3d';
+    } else if (vendorPrefix + 'Transform' in bodyStyle) {
+      // Browsers without 3D support, e.g. IE9
+      return 'translate';
+    } else {
+      // Browsers without translate() support, e.g. IE7-8
+      return 'margin';
+    }
+  };
+
+  /**
+   * Helpers
+   */
+
+  function clamp(n, min, max) {
+    if (n < min) return min;
+    if (n > max) return max;
+    return n;
+  }
+
+  /**
+   * (Internal) converts a percentage (`0..1`) to a bar translateX
+   * percentage (`-100%..0%`).
+   */
+
+  function toBarPerc(n) {
+    return (-1 + n) * 100;
+  }
+
+
+  /**
+   * (Internal) returns the correct CSS for changing the bar's
+   * position given an n percentage, and speed and ease from Settings
+   */
+
+  function barPositionCSS(n, speed, ease) {
+    var barCSS;
+
+    if (Settings.positionUsing === 'translate3d') {
+      barCSS = { transform: 'translate3d('+toBarPerc(n)+'%,0,0)' };
+    } else if (Settings.positionUsing === 'translate') {
+      barCSS = { transform: 'translate('+toBarPerc(n)+'%,0)' };
+    } else {
+      barCSS = { 'margin-left': toBarPerc(n)+'%' };
+    }
+
+    barCSS.transition = 'all '+speed+'ms '+ease;
+
+    return barCSS;
+  }
+
+  /**
+   * (Internal) Queues a function to be executed.
+   */
+
+  var queue = (function() {
+    var pending = [];
+    
+    function next() {
+      var fn = pending.shift();
+      if (fn) {
+        fn(next);
+      }
+    }
+
+    return function(fn) {
+      pending.push(fn);
+      if (pending.length == 1) next();
+    };
+  })();
+
+  /**
+   * (Internal) Applies css properties to an element, similar to the jQuery 
+   * css method.
+   *
+   * While this helper does assist with vendor prefixed property names, it 
+   * does not perform any manipulation of values prior to setting styles.
+   */
+
+  var css = (function() {
+    var cssPrefixes = [ 'Webkit', 'O', 'Moz', 'ms' ],
+        cssProps    = {};
+
+    function camelCase(string) {
+      return string.replace(/^-ms-/, 'ms-').replace(/-([\da-z])/gi, function(match, letter) {
+        return letter.toUpperCase();
+      });
+    }
+
+    function getVendorProp(name) {
+      var style = document.body.style;
+      if (name in style) return name;
+
+      var i = cssPrefixes.length,
+          capName = name.charAt(0).toUpperCase() + name.slice(1),
+          vendorName;
+      while (i--) {
+        vendorName = cssPrefixes[i] + capName;
+        if (vendorName in style) return vendorName;
+      }
+
+      return name;
+    }
+
+    function getStyleProp(name) {
+      name = camelCase(name);
+      return cssProps[name] || (cssProps[name] = getVendorProp(name));
+    }
+
+    function applyCss(element, prop, value) {
+      prop = getStyleProp(prop);
+      element.style[prop] = value;
+    }
+
+    return function(element, properties) {
+      var args = arguments,
+          prop, 
+          value;
+
+      if (args.length == 2) {
+        for (prop in properties) {
+          value = properties[prop];
+          if (value !== undefined && properties.hasOwnProperty(prop)) applyCss(element, prop, value);
+        }
+      } else {
+        applyCss(element, args[1], args[2]);
+      }
+    }
+  })();
+
+  /**
+   * (Internal) Determines if an element or space separated list of class names contains a class name.
+   */
+
+  function hasClass(element, name) {
+    var list = typeof element == 'string' ? element : classList(element);
+    return list.indexOf(' ' + name + ' ') >= 0;
+  }
+
+  /**
+   * (Internal) Adds a class to an element.
+   */
+
+  function addClass(element, name) {
+    var oldList = classList(element),
+        newList = oldList + name;
+
+    if (hasClass(oldList, name)) return; 
+
+    // Trim the opening space.
+    element.className = newList.substring(1);
+  }
+
+  /**
+   * (Internal) Removes a class from an element.
+   */
+
+  function removeClass(element, name) {
+    var oldList = classList(element),
+        newList;
+
+    if (!hasClass(element, name)) return;
+
+    // Replace the class name.
+    newList = oldList.replace(' ' + name + ' ', ' ');
+
+    // Trim the opening and closing spaces.
+    element.className = newList.substring(1, newList.length - 1);
+  }
+
+  /**
+   * (Internal) Gets a space separated list of the class names on the element. 
+   * The list is wrapped with a single space on each end to facilitate finding 
+   * matches within the list.
+   */
+
+  function classList(element) {
+    return (' ' + (element.className || '') + ' ').replace(/\s+/gi, ' ');
+  }
+
+  /**
+   * (Internal) Removes an element from the DOM.
+   */
+
+  function removeElement(element) {
+    element && element.parentNode && element.parentNode.removeChild(element);
+  }
+
+  return NProgress;
+});
+
 
 
 /***/ }),
@@ -22116,6 +22683,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_markup_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../css/markup.scss */ "./css/markup.scss");
 /* harmony import */ var _css_markup_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_css_markup_scss__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _fontawsome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../fontawsome */ "./fontawsome.js");
+/* harmony import */ var _css_nprogress_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../css/nprogress.css */ "./css/nprogress.css");
+/* harmony import */ var _css_nprogress_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_css_nprogress_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! nprogress */ "./node_modules/nprogress/nprogress.js");
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_10__);
 
 var _jsxFileName = "/Users/chanki/react/next-blog/pages/_app.js";
 
@@ -22127,19 +22700,31 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+
+
+next_router__WEBPACK_IMPORTED_MODULE_10___default.a.events.on('routeChangeStart', function (url) {
+  nprogress__WEBPACK_IMPORTED_MODULE_9___default.a.start();
+});
+next_router__WEBPACK_IMPORTED_MODULE_10___default.a.events.on('routeChangeComplete', function () {
+  return nprogress__WEBPACK_IMPORTED_MODULE_9___default.a.done();
+});
+next_router__WEBPACK_IMPORTED_MODULE_10___default.a.events.on('routeChangeError', function () {
+  return nprogress__WEBPACK_IMPORTED_MODULE_9___default.a.done();
+});
+
 var App = function App(_ref) {
   var Component = _ref.Component,
       pageProps = _ref.pageProps;
   return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_layout_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 21
     },
     __self: this
   }, __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 22
     },
     __self: this
   }))));

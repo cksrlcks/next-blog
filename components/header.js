@@ -7,11 +7,11 @@ const Nav = () => {
     return (
         <Header>
             <div className="global-inner">
-                <h1 className="logo"><Link href="/"><a><Logo className="logo" /></a></Link></h1>
+                <h1 className="logo"><Link prefetch={true} href="/"><a><Logo className="logo" /></a></Link></h1>
                 <nav className="gnb">
-                    <ActiveLink href="/blog" activeClassName='active'><a>블로그</a></ActiveLink>
-                    <ActiveLink href="/study" activeClassName='active'><a>공부</a></ActiveLink>
-                    <ActiveLink href="/work" activeClassName='active'><a>작업</a></ActiveLink>
+                    <ActiveLink prefetch={true} href="/blog" activeClassName='active'><a>블로그</a></ActiveLink>
+                    <ActiveLink prefetch={true} href="/study" activeClassName='active'><a>공부</a></ActiveLink>
+                    <ActiveLink prefetch={true} href="/work" activeClassName='active'><a>작업</a></ActiveLink>
                 </nav>
                 <WritePost>Write</WritePost>
             </div>

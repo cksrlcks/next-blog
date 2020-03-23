@@ -75,6 +75,7 @@ const Card = styled.div`
                 text-overflow:ellipsis;
                 overflow:hidden;
                 white-space:nowrap;
+                line-height:1.2em;
             }
             .summary{
                 font-size:13px;

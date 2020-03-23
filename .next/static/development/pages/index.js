@@ -110,7 +110,7 @@ var CardList = function CardList(_ref) {
 var Card = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "cardList__Card",
   componentId: "sc-618xny-0"
-})(["width:33.333%;box-sizing:border-box;padding:0.6em;@media (max-width:968px){width:50%;}@media (max-width:768px){width:100%;}.card-wrapper{display:block;background:#fff;height:100%;border-radius:4px;overflow:hidden;border:1px solid #eee;box-shadow:3px 3px 10px rgba(0,0,0,0.015);transition:all 0.2s ease;position:relative;&:hover{border-color:#ddd;box-shadow:3px 3px 20px rgba(0,0,0,0.035);transform:translateY(-5px)}.feature-img{width:100%;padding-top:52%;position:relative;display:block;background-position:center;background-size:cover;}.content{display:block;padding:1.2em 1.2em;box-sizing:border-box;.title{color:#223141;font-weight:500;margin-bottom:0.4em;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}.summary{font-size:13px;color:#8794A3;line-height:1.4em;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;text-overflow:ellipsis;overflow:hidden;max-height:4.2em;}}.date{box-sizing:border-box;border-top:1px solid #eee;padding:1.2em;font-size:13px;color:#8794A3;}}"]);
+})(["width:33.333%;box-sizing:border-box;padding:0.6em;@media (max-width:968px){width:50%;}@media (max-width:768px){width:100%;}.card-wrapper{display:block;background:#fff;height:100%;border-radius:4px;overflow:hidden;border:1px solid #eee;box-shadow:3px 3px 10px rgba(0,0,0,0.015);transition:all 0.2s ease;position:relative;&:hover{border-color:#ddd;box-shadow:3px 3px 20px rgba(0,0,0,0.035);transform:translateY(-5px)}.feature-img{width:100%;padding-top:52%;position:relative;display:block;background-position:center;background-size:cover;}.content{display:block;padding:1.2em 1.2em;box-sizing:border-box;.title{color:#223141;font-weight:500;margin-bottom:0.4em;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:1.2em;}.summary{font-size:13px;color:#8794A3;line-height:1.4em;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;text-overflow:ellipsis;overflow:hidden;max-height:4.2em;}}.date{box-sizing:border-box;border-top:1px solid #eee;padding:1.2em;font-size:13px;color:#8794A3;}}"]);
 
 /***/ }),
 
@@ -3447,7 +3447,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var qs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(qs__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var lodash_isPlainObject__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash/isPlainObject */ "./node_modules/lodash/isPlainObject.js");
 /* harmony import */ var lodash_isPlainObject__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_isPlainObject__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! os */ 2);
+/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! os */ 3);
 /* harmony import */ var os__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(os__WEBPACK_IMPORTED_MODULE_3__);
 
 
@@ -16621,6 +16621,7 @@ Home.getInitialProps = function _callee(_ref) {
           limit = 12;
           _context.next = 6;
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(_config__WEBPACK_IMPORTED_MODULE_4__["default"].getEntries({
+            order: 'sys.createdAt',
             skip: (page - 1) * limit,
             limit: limit
           }));
@@ -16654,7 +16655,7 @@ var CardContainer = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].di
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fchanki%2Freact%2Fnext-blog%2Fpages%2Findex.js ***!
   \*************************************************************************************************************************/
@@ -16666,7 +16667,7 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!********************!*\
   !*** os (ignored) ***!
   \********************/
@@ -16688,5 +16689,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

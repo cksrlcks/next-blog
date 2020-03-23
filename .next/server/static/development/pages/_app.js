@@ -131,7 +131,7 @@ const ActiveLink = (_ref) => {
   const child = react__WEBPACK_IMPORTED_MODULE_2__["Children"].only(children);
   let className = child.props.className || null;
 
-  if (router.pathname === props.href && props.activeClassName) {
+  if (`/${router.pathname.split("/")[1]}` === props.href && props.activeClassName) {
     className = `${className !== null ? className : ''} ${props.activeClassName}`.trim();
   }
 
@@ -240,6 +240,7 @@ const Nav = () => {
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    prefetch: true,
     href: "/",
     __source: {
       fileName: _jsxFileName,
@@ -267,6 +268,7 @@ const Nav = () => {
     },
     __self: undefined
   }, __jsx(_activeLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    prefetch: true,
     href: "/blog",
     activeClassName: "active",
     __source: {
@@ -281,6 +283,7 @@ const Nav = () => {
     },
     __self: undefined
   }, "\uBE14\uB85C\uADF8")), __jsx(_activeLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    prefetch: true,
     href: "/study",
     activeClassName: "active",
     __source: {
@@ -295,6 +298,7 @@ const Nav = () => {
     },
     __self: undefined
   }, "\uACF5\uBD80")), __jsx(_activeLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    prefetch: true,
     href: "/work",
     activeClassName: "active",
     __source: {
@@ -351,6 +355,7 @@ const Logo = () => {
   return __jsx(LogoSvg, {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 91.31 17.11",
+    height: "1.8",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
@@ -457,6 +462,17 @@ const LogoSvg = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.svg.wit
 /*!*************************!*\
   !*** ./css/markup.scss ***!
   \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./css/nprogress.css":
+/*!***************************!*\
+  !*** ./css/nprogress.css ***!
+  \***************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -2504,6 +2520,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_markup_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../css/markup.scss */ "./css/markup.scss");
 /* harmony import */ var _css_markup_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_css_markup_scss__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _fontawsome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../fontawsome */ "./fontawsome.js");
+/* harmony import */ var _css_nprogress_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../css/nprogress.css */ "./css/nprogress.css");
+/* harmony import */ var _css_nprogress_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_css_nprogress_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! nprogress */ "nprogress");
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_9__);
 var _jsxFileName = "/Users/chanki/react/next-blog/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -2517,6 +2539,14 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 
+
+
+next_router__WEBPACK_IMPORTED_MODULE_9___default.a.events.on('routeChangeStart', url => {
+  nprogress__WEBPACK_IMPORTED_MODULE_8___default.a.start();
+});
+next_router__WEBPACK_IMPORTED_MODULE_9___default.a.events.on('routeChangeComplete', () => nprogress__WEBPACK_IMPORTED_MODULE_8___default.a.done());
+next_router__WEBPACK_IMPORTED_MODULE_9___default.a.events.on('routeChangeError', () => nprogress__WEBPACK_IMPORTED_MODULE_8___default.a.done());
+
 const App = ({
   Component,
   pageProps
@@ -2524,13 +2554,13 @@ const App = ({
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_layout_layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 21
     },
     __self: undefined
   }, __jsx(Component, _extends({}, pageProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 22
     },
     __self: undefined
   }))));
@@ -2582,6 +2612,17 @@ module.exports = require("@fortawesome/free-solid-svg-icons");
 /***/ (function(module, exports) {
 
 module.exports = require("next/router");
+
+/***/ }),
+
+/***/ "nprogress":
+/*!****************************!*\
+  !*** external "nprogress" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("nprogress");
 
 /***/ }),
 

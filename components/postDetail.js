@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 import CodeBlock from '../components/codeRender';
 import ReactMarkdown from "react-markdown";
 import styled from 'styled-components';
@@ -25,7 +25,17 @@ const Post = ({ pageContent }) => {
             </div>
 
             <div className="post-body">
-                <ReactMarkdown source={postbody} renderers={{ code: CodeBlock }} />
+                <ReactMarkdown
+                    source={postbody}
+                    skipHtml={false}
+                    escapeHtml={false}
+                    renderers={
+                        {
+                            code: CodeBlock, link: props => <a href={props.href} target="_blank" rel='nofollow noreferrer noopener'>{props.children}</a>
+                        }
+
+                    }
+                />
             </div>
         </PostBody>
     )
@@ -36,9 +46,16 @@ const TitleBlock = styled.h1`
     font-size:3em;
     line-height:1.3em;
     letter-spacing:-0.02em;
-    margin-bottom:1.7em;
+    margin-bottom:1.5em;
     font-weight: 800;
     word-break: keep-all;
+    @media (max-width: 968px) {
+        font-size:2em;
+    }
+    @media (max-width: 768px) {
+        font-size:1.8em;
+        margin-bottom:1.2em;
+    }
 `
 const PostBody = styled.div`
     padding:3em 1em;
@@ -51,6 +68,18 @@ const PostBody = styled.div`
         }
         .tags{
             float:left;
+            padding-left: 0.6em;
+            position:relative;
+            &:after{
+                content:"";
+                display:block;
+                position:absolute;
+                width:1px;
+                height:0.8em;
+                background:#eee;
+                left:0;
+                top:0.1em;
+            }
         }
         .date{
             float:left;

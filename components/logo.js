@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Logo = () => {
     return (
-        <LogoSvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.31 17.11" >
+        <LogoSvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.31 17.11" height="1.8">
             <g>
                 <g>
                     <path d="M10.8.4V13.22H9.12V7.43H1.68v5.79H0V.4H1.68V5.89H9.12V.4Z" />

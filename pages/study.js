@@ -46,6 +46,7 @@ Study.getInitialProps = async ({ query }) => {
 
     const { items, total, skip } = await client.getEntries({
         content_type: 'studyPost',
+        order: 'sys.createdAt',
         skip: (page - 1) * limit,
         limit,
     });
