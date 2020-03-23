@@ -60,7 +60,7 @@ const PostItem = styled.section`
         }
         .content{
             display:block;
-            padding:2em 0.4em;
+            padding:2em 0.4em 1.5em;
             box-sizing:border-box;
             .title{
                 font-size:1.6em;
@@ -70,6 +70,7 @@ const PostItem = styled.section`
                 text-overflow:ellipsis;
                 overflow:hidden;
                 white-space:nowrap;
+                line-height:1.2em;
             }
             .summary{
                 font-size:1.2em;
@@ -90,7 +91,7 @@ const PostItem = styled.section`
             .date{
                 float:left;
                 box-sizing:border-box;
-                padding:1.2em 0;
+                padding:1em 0;
                 font-size:1em;
                 color:#8794A3;
             }
