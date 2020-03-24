@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/study/[id].js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/work/[id].js"],{
 
 /***/ "./components/codeRender.js":
 /*!**********************************!*\
@@ -38674,21 +38674,21 @@ module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fstudy%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fchanki%2Freact%2Fnext-blog%2Fpages%2Fstudy%2F%5Bid%5D.js!./":
-/*!************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fstudy%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fchanki%2Freact%2Fnext-blog%2Fpages%2Fstudy%2F%5Bid%5D.js ***!
-  \************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwork%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fchanki%2Freact%2Fnext-blog%2Fpages%2Fwork%2F%5Bid%5D.js!./":
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwork%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fchanki%2Freact%2Fnext-blog%2Fpages%2Fwork%2F%5Bid%5D.js ***!
+  \**********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/study/[id]", function() {
-      var mod = __webpack_require__(/*! ./pages/study/[id].js */ "./pages/study/[id].js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/work/[id]", function() {
+      var mod = __webpack_require__(/*! ./pages/work/[id].js */ "./pages/work/[id].js")
       if(true) {
-        module.hot.accept(/*! ./pages/study/[id].js */ "./pages/study/[id].js", function() {
-          if(!next.router.components["/study/[id]"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/study/[id].js */ "./pages/study/[id].js")
-          next.router.update("/study/[id]", updatedPage)
+        module.hot.accept(/*! ./pages/work/[id].js */ "./pages/work/[id].js", function() {
+          if(!next.router.components["/work/[id]"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/work/[id].js */ "./pages/work/[id].js")
+          next.router.update("/work/[id]", updatedPage)
         })
       }
       return mod
@@ -77048,10 +77048,10 @@ function extend() {
 
 /***/ }),
 
-/***/ "./pages/study/[id].js":
-/*!*****************************!*\
-  !*** ./pages/study/[id].js ***!
-  \*****************************/
+/***/ "./pages/work/[id].js":
+/*!****************************!*\
+  !*** ./pages/work/[id].js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -77066,7 +77066,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../config */ "./config.js");
 /* harmony import */ var _components_postDetail__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/postDetail */ "./components/postDetail.js");
 
-var _jsxFileName = "/Users/chanki/react/next-blog/pages/study/[id].js";
+var _jsxFileName = "/Users/chanki/react/next-blog/pages/work/[id].js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -77121,14 +77121,14 @@ Post.getInitialProps = function _callee(_ref) {
 
 /***/ }),
 
-/***/ 3:
-/*!****************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fstudy%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fchanki%2Freact%2Fnext-blog%2Fpages%2Fstudy%2F%5Bid%5D.js ***!
-  \****************************************************************************************************************************************************/
+/***/ 6:
+/*!**************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fwork%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fchanki%2Freact%2Fnext-blog%2Fpages%2Fwork%2F%5Bid%5D.js ***!
+  \**************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fstudy%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fchanki%2Freact%2Fnext-blog%2Fpages%2Fstudy%2F%5Bid%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fstudy%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fchanki%2Freact%2Fnext-blog%2Fpages%2Fstudy%2F%5Bid%5D.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fwork%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fchanki%2Freact%2Fnext-blog%2Fpages%2Fwork%2F%5Bid%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwork%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fchanki%2Freact%2Fnext-blog%2Fpages%2Fwork%2F%5Bid%5D.js!./");
 
 
 /***/ }),
@@ -77144,5 +77144,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[6,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

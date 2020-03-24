@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2379,10 +2379,10 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./pages/study.js":
-/*!************************!*\
-  !*** ./pages/study.js ***!
-  \************************/
+/***/ "./pages/blog.js":
+/*!***********************!*\
+  !*** ./pages/blog.js ***!
+  \***********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2395,7 +2395,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config */ "./config.js");
 /* harmony import */ var _components_postList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/postList */ "./components/postList.js");
 /* harmony import */ var _components_paginator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/paginator */ "./components/paginator.js");
-var _jsxFileName = "/Users/chanki/react/next-blog/pages/study.js";
+var _jsxFileName = "/Users/chanki/react/next-blog/pages/blog.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -2407,7 +2407,7 @@ const calculateRange = length => Array.from({
   length
 }, (v, k) => k + 1);
 
-const Study = props => {
+const Blog = props => {
   const router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
   const total = props.total;
   const limit = props.limit;
@@ -2420,7 +2420,7 @@ const Study = props => {
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     // push를 사용하면 클라이언트사이드에서 라우팅을 실행함
     void router.push({
-      pathname: '/study',
+      pathname: '/blog',
       query: {
         page: page
       }
@@ -2462,7 +2462,7 @@ const Study = props => {
   })));
 };
 
-Study.getInitialProps = async ({
+Blog.getInitialProps = async ({
   query
 }) => {
   let page = 1; //클라이언트사이드에서 재랜더링되면서 쿼리 파라미터가 입력됫을경우 page값을 업데이트
@@ -2477,8 +2477,8 @@ Study.getInitialProps = async ({
     total,
     skip
   } = await _config__WEBPACK_IMPORTED_MODULE_2__["default"].getEntries({
-    content_type: 'studyPost',
-    order: 'sys.createdAt',
+    content_type: 'blogPost',
+    order: '-sys.createdAt',
     skip: (page - 1) * limit,
     limit
   });
@@ -2491,18 +2491,18 @@ Study.getInitialProps = async ({
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Study);
+/* harmony default export */ __webpack_exports__["default"] = (Blog);
 
 /***/ }),
 
-/***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/study.js ***!
-  \******************************/
+/***/ 5:
+/*!*****************************!*\
+  !*** multi ./pages/blog.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/chanki/react/next-blog/pages/study.js */"./pages/study.js");
+module.exports = __webpack_require__(/*! /Users/chanki/react/next-blog/pages/blog.js */"./pages/blog.js");
 
 
 /***/ }),
@@ -2596,4 +2596,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=study.js.map
+//# sourceMappingURL=blog.js.map

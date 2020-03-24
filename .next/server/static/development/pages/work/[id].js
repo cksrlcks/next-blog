@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -357,10 +357,10 @@ const client = contentful.createClient({
 
 /***/ }),
 
-/***/ "./pages/study/[id].js":
-/*!*****************************!*\
-  !*** ./pages/study/[id].js ***!
-  \*****************************/
+/***/ "./pages/work/[id].js":
+/*!****************************!*\
+  !*** ./pages/work/[id].js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -372,7 +372,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../config */ "./config.js");
 /* harmony import */ var _components_postDetail__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/postDetail */ "./components/postDetail.js");
-var _jsxFileName = "/Users/chanki/react/next-blog/pages/study/[id].js";
+var _jsxFileName = "/Users/chanki/react/next-blog/pages/work/[id].js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -401,14 +401,14 @@ Post.getInitialProps = async ({
 
 /***/ }),
 
-/***/ 4:
-/*!***********************************!*\
-  !*** multi ./pages/study/[id].js ***!
-  \***********************************/
+/***/ 7:
+/*!**********************************!*\
+  !*** multi ./pages/work/[id].js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/chanki/react/next-blog/pages/study/[id].js */"./pages/study/[id].js");
+module.exports = __webpack_require__(/*! /Users/chanki/react/next-blog/pages/work/[id].js */"./pages/work/[id].js");
 
 
 /***/ }),

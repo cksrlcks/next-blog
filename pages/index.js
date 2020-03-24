@@ -54,7 +54,7 @@ Home.getInitialProps = async ({ query }) => {
     const limit = 12;
 
     const { items, total, skip } = await client.getEntries({
-        order: 'sys.createdAt',
+        order: '-sys.createdAt',
         skip: (page - 1) * limit,
         limit,
     });
