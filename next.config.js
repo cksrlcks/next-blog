@@ -10,5 +10,9 @@ module.exports = {
         }
 
         return config
+    },
+    env: {
+        CONTENTFUL_SPACE_ID: 'szikisnpiddf',
+        CONTENTFUL_ACCESS_TOKEN: 'NHo2ByFSfsVvVZpuNEsqdr7aC53bcsA89jOGGzSLYKk'
     }
 }

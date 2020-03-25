@@ -5552,6 +5552,11 @@ normalize-url@1.9.1:
     query-string "^4.1.0"
     sort-keys "^1.0.0"
 
+now-cli@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/now-cli/-/now-cli-0.0.0.tgz#eb0e63426999815b344313ba3ea99a4f7cf8dc0b"
+  integrity sha1-6w5jQmmZgVs0QxO6PqmaT3z43As=
+
 now@^17.1.1:
   version "17.1.1"
   resolved "https://registry.yarnpkg.com/now/-/now-17.1.1.tgz#5e5fade17c3f9c3b7e3900be3febf7c21c7d6935"
