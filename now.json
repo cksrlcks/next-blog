@@ -5,5 +5,11 @@
             "CONTENTFUL_ACCESS_TOKEN": "@contentful_access_token"
         }
     },
+    "builds": [
+        {
+          "src": "package.json",
+          "use": "@now/next"
+        }
+      ],
     "version": 2
 }

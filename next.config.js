@@ -1,18 +1,28 @@
+const path = require('path');
+const Dotenv = require('dotenv-webpack');
+const next_config = {
+  webpack: (config, { isServer }) => {
+    config.plugins = config.plugins || [];
 
-module.exports = {
-    
-    webpack: (config, { isServer }) => {
-        // Fixes npm packages that depend on `fs` module
-        if (!isServer) {
-            config.node = {
-                fs: 'empty'
-            }
+    config.plugins = [
+      ...config.plugins,
+      // Read the .env file
+      new Dotenv({
+        path: path.join(__dirname, '.env'),
+        systemvars: true
+      })
+
+      
+    ];
+
+    if (!isServer) {
+        config.node = {
+            fs: 'empty'
         }
-
-        return config
-    },
-    env: {
-        CONTENTFUL_SPACE_ID: 'szikisnpiddf',
-        CONTENTFUL_ACCESS_TOKEN: 'NHo2ByFSfsVvVZpuNEsqdr7aC53bcsA89jOGGzSLYKk'
     }
+
+    return config;
+  },
 }
+
+module.exports = {...next_config};
