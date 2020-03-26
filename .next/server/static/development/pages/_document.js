@@ -1117,30 +1117,38 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
         lineNumber: 19
       },
       __self: this
-    }), __jsx("script", {
-      type: "text/javascript",
-      src: "/static/lib/masonry.pkgd.min.js",
+    }), __jsx("meta", {
+      name: "google-site-verification",
+      content: "N3HIIShejhE7s8soNIMfLpOQ0YBs4qrm29U9P_WFYv4",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 20
       },
       __self: this
-    }), this.props.styleTags), __jsx("body", {
+    }), __jsx("script", {
+      type: "text/javascript",
+      src: "/static/lib/masonry.pkgd.min.js",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 21
       },
       __self: this
-    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
+    }), this.props.styleTags), __jsx("body", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 24
       },
       __self: this
-    }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
+    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 25
+      },
+      __self: this
+    }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
       },
       __self: this
     })));

@@ -65,12 +65,13 @@ const PostItem = styled.section`
             .title{
                 font-size:1.6em;
                 color:#223141;
-                font-weight:700;
+                font-weight:bold;
                 margin-bottom:0.7em;
                 text-overflow:ellipsis;
                 overflow:hidden;
                 white-space:nowrap;
-                line-height:1.2em;
+                line-height:1.3em;
+                letter-spacing: -0.02em;
             }
             .summary{
                 font-size:1.2em;

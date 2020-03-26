@@ -24,19 +24,19 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
+    "/blog/[id]": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/next/dist/pages/_error": [
+    "/study": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
     "/study/[id]": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/work/[id]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

@@ -43,11 +43,11 @@ const Post = ({ pageContent }) => {
 
 export default Post;
 const TitleBlock = styled.h1`
-    font-size:3em;
+    font-size:3.2em;
     line-height:1.3em;
     letter-spacing:-0.02em;
     margin-bottom:1.5em;
-    font-weight: 800;
+    font-weight: bold;
     word-break: keep-all;
     @media (max-width: 968px) {
         font-size:2em;

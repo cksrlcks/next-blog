@@ -70,12 +70,12 @@ const Card = styled.div`
             box-sizing:border-box;
             .title{
                 color:#223141;
-                font-weight:500;
+                font-weight:bold;
                 margin-bottom:0.4em;
                 text-overflow:ellipsis;
                 overflow:hidden;
                 white-space:nowrap;
-                line-height:1.2em;
+                line-height:1.3em;
             }
             .summary{
                 font-size:13px;
