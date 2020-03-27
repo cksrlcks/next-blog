@@ -34,6 +34,7 @@ export default class MyDocument extends Document {
                 <Head>
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
                     <meta name="google-site-verification" content="N3HIIShejhE7s8soNIMfLpOQ0YBs4qrm29U9P_WFYv4" />
+                    <meta name="naver-site-verification" content="a29bc0e8f264386f1af1943853893217ecc6b7b5" />
                     <script type="text/javascript" src="/static/lib/masonry.pkgd.min.js"></script>
                     {this.props.styleTags}
                 </Head>
