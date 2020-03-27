@@ -1078,21 +1078,28 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
-  static getInitialProps({
-    renderPage
-  }) {
+  static async getInitialProps(ctx) {
     const sheet = new styled_components__WEBPACK_IMPORTED_MODULE_2__["ServerStyleSheet"]();
-    const page = renderPage(App => props => sheet.collectStyles(__jsx(App, _extends({}, props, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }))));
-    const styleTags = sheet.getStyleElement();
-    return _objectSpread({}, page, {
-      styleTags
-    });
+    const originalRenderPage = ctx.renderPage;
+
+    try {
+      ctx.renderPage = () => originalRenderPage({
+        enhanceApp: App => props => sheet.collectStyles(__jsx(App, _extends({}, props, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          },
+          __self: this
+        })))
+      });
+
+      const initialProps = await next_document__WEBPACK_IMPORTED_MODULE_1___default.a.getInitialProps(ctx);
+      return _objectSpread({}, initialProps, {
+        styles: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, initialProps.styles, sheet.getStyleElement())
+      });
+    } finally {
+      sheet.seal();
+    }
   }
 
   render() {
@@ -1100,13 +1107,13 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       lang: "ko",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 33
       },
       __self: this
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 34
       },
       __self: this
     }, __jsx("meta", {
@@ -1114,7 +1121,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       content: "IE=edge",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 35
       },
       __self: this
     }), __jsx("meta", {
@@ -1122,7 +1129,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       content: "N3HIIShejhE7s8soNIMfLpOQ0YBs4qrm29U9P_WFYv4",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 36
       },
       __self: this
     }), __jsx("script", {
@@ -1130,25 +1137,25 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       src: "/static/lib/masonry.pkgd.min.js",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 37
       },
       __self: this
     }), this.props.styleTags), __jsx("body", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 40
       },
       __self: this
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 41
       },
       __self: this
     }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 42
       },
       __self: this
     })));
