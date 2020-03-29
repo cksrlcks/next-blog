@@ -33,7 +33,7 @@ export default class MyDocument extends Document {
       <html lang="ko">
         <Head>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
-          <meta name="google-site-verification" content="N3HIIShejhE7s8soNIMfLpOQ0YBs4qrm29U9P_WFYv4" />
+          <meta name="google-site-verification" content="mg5O0ul2XSt7cBOtNc_KCy13gR9fHqM_yBJwFQ56iog" />
           <meta name="naver-site-verification" content="a29bc0e8f264386f1af1943853893217ecc6b7b5" />
           <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png" />
