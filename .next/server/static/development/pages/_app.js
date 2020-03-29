@@ -564,7 +564,7 @@ const Layout = ({
 const Container = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "layout__Container",
   componentId: "nvvec4-0"
-})(["margin:2em auto 5em;min-height:80vh;"]);
+})(["margin:1em auto 5em;min-height:80vh;"]);
 
 /***/ }),
 

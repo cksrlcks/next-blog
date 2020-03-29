@@ -65,8 +65,8 @@ Home.getInitialProps = async ({ query }) => {
 export default Home;
 
 const CardContainer = styled.div`
-    padding:2em 0 1em;
+    padding:0em 0 1em;
     @media (max-width: 968px) {
-        padding:0.5em 0;
+        padding:0em 0;
     }
 `

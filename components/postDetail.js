@@ -59,6 +59,9 @@ const TitleBlock = styled.h1`
 `
 const PostBody = styled.div`
     padding:3em 1em;
+    @media (max-width: 968px) {
+        padding:1em 1em;
+    }
     .meta{
         padding-bottom:2em;
         &:after{
@@ -88,7 +91,7 @@ const PostBody = styled.div`
         }
     }
     .post-body{
-        padding-top:2em;
+        padding-top:1em;
         border-top:1px solid #eee;
     }
 `;

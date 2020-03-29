@@ -17,6 +17,6 @@ const Layout = ({ children }) => {
 export default Layout;
 
 const Container = styled.div`
-    margin:2em auto 5em;
+    margin:1em auto 5em;
     min-height:80vh;
 `
