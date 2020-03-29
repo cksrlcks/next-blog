@@ -24,7 +24,7 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/blog/[id]": [
+    "/blog": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -32,7 +32,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/next/dist/pages/_error": [
+    "/study": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],

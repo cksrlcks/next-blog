@@ -51,7 +51,7 @@ const Card = styled.div`
         position:relative;
 
         &:hover{
-            border-color:#ddd;
+            border-color:#eaeaea;
             box-shadow:3px 3px 20px rgba(0,0,0,0.035);
             transform:translateY(-5px)
         }
@@ -66,8 +66,9 @@ const Card = styled.div`
         }
         .content{
             display:block;
-            padding:1.2em 1.2em;
+            padding:1.5em 1.2em;
             box-sizing:border-box;
+
             .title{
                 color:#223141;
                 font-weight:bold;
@@ -76,6 +77,7 @@ const Card = styled.div`
                 overflow:hidden;
                 white-space:nowrap;
                 line-height:1.3em;
+                transition:color 0.2s;
             }
             .summary{
                 font-size:13px;
@@ -88,6 +90,9 @@ const Card = styled.div`
                 text-overflow:ellipsis;
                 overflow:hidden;
                 max-height:4.2em;
+            }
+            &:hover .title{
+                color:rgb(34,184,207);
             }
         }
 

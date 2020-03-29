@@ -1063,7 +1063,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\chang\\Desktop\\coding\\next-blog\\pages\\_document.js";
+var _jsxFileName = "/Users/chanki/react/next-blog/pages/_document.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -1132,30 +1132,75 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
         lineNumber: 36
       },
       __self: this
-    }), __jsx("script", {
-      type: "text/javascript",
-      src: "/static/lib/masonry.pkgd.min.js",
+    }), __jsx("meta", {
+      name: "naver-site-verification",
+      content: "a29bc0e8f264386f1af1943853893217ecc6b7b5",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 37
       },
       __self: this
-    }), this.props.styleTags), __jsx("body", {
+    }), __jsx("link", {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      href: "/static/favicon/apple-touch-icon.png",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      href: "/static/favicon/favicon-32x32.png",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      href: "/static/favicon/favicon-16x16.png",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 40
       },
       __self: this
-    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
+    }), __jsx("link", {
+      rel: "manifest",
+      href: "/static/favicon/site.webmanifest",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 41
       },
       __self: this
-    }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
+    }), __jsx("script", {
+      type: "text/javascript",
+      src: "/static/lib/masonry.pkgd.min.js",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 42
+      },
+      __self: this
+    }), this.props.styleTags), __jsx("body", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45
+      },
+      __self: this
+    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
       },
       __self: this
     })));

@@ -62,6 +62,7 @@ const PostItem = styled.section`
             display:block;
             padding:2em 0.4em 1.5em;
             box-sizing:border-box;
+
             .title{
                 font-size:1.6em;
                 color:#223141;
@@ -72,11 +73,15 @@ const PostItem = styled.section`
                 white-space:nowrap;
                 line-height:1.3em;
                 letter-spacing: -0.02em;
+                transition:color 0.2s;
             }
             .summary{
                 font-size:1.2em;
                 color:#8794A3;
                 line-height:1.4em;
+            }
+            &:hover .title{
+                color:rgb(34,184,207)
             }
         }
         .meta{
