@@ -1125,11 +1125,75 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       },
       __self: this
     }), __jsx("meta", {
+      name: "description",
+      content: "\uB514\uC790\uC774\uB108 \uAE40\uCC2C\uAE30\uC758 \uBE14\uB85C\uADF8, \uD3EC\uD2B8\uD3F4\uB9AC\uC624",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36
+      },
+      __self: this
+    }), __jsx("meta", {
+      name: "keywords",
+      content: "\uD3EC\uD2B8\uD3F4\uB9AC\uC624, \uC6F9\uB514\uC790\uC774\uB108, \uC6F9\uD37C\uBE14\uB9AC\uC154, \uD504\uB860\uD2B8\uC5D4\uB4DC, \uB9AC\uC5D1\uD2B8, react, next.js, \uC6CC\uB4DC\uD504\uB808\uC2A4",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }), __jsx("meta", {
+      name: "author",
+      content: "chanki - heavybear",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }), __jsx("meta", {
+      property: "og:type",
+      content: "blog",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }), __jsx("meta", {
+      property: "og:title",
+      content: "heavybear-blog",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }), __jsx("meta", {
+      property: "og:description",
+      content: "\uB514\uC790\uC774\uB108 \uAE40\uCC2C\uAE30\uC758 \uBE14\uB85C\uADF8, \uD3EC\uD2B8\uD3F4\uB9AC\uC624",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
+    }), __jsx("meta", {
+      property: "og:image",
+      content: "/static/img/cover.png",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }), __jsx("meta", {
+      property: "og:url",
+      content: "https://heavybear.net",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      },
+      __self: this
+    }), __jsx("meta", {
       name: "google-site-verification",
       content: "mg5O0ul2XSt7cBOtNc_KCy13gR9fHqM_yBJwFQ56iog",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36
+        lineNumber: 44
       },
       __self: this
     }), __jsx("meta", {
@@ -1137,7 +1201,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       content: "a29bc0e8f264386f1af1943853893217ecc6b7b5",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37
+        lineNumber: 45
       },
       __self: this
     }), __jsx("link", {
@@ -1146,7 +1210,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       href: "/static/favicon/apple-touch-icon.png",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 46
       },
       __self: this
     }), __jsx("link", {
@@ -1156,7 +1220,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       href: "/static/favicon/favicon-32x32.png",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 47
       },
       __self: this
     }), __jsx("link", {
@@ -1166,7 +1230,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       href: "/static/favicon/favicon-16x16.png",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40
+        lineNumber: 48
       },
       __self: this
     }), __jsx("link", {
@@ -1174,7 +1238,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       href: "/static/favicon/site.webmanifest",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41
+        lineNumber: 49
       },
       __self: this
     }), __jsx("script", {
@@ -1182,25 +1246,25 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       src: "/static/lib/masonry.pkgd.min.js",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42
+        lineNumber: 50
       },
       __self: this
     }), this.props.styleTags), __jsx("body", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45
+        lineNumber: 53
       },
       __self: this
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46
+        lineNumber: 54
       },
       __self: this
     }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47
+        lineNumber: 55
       },
       __self: this
     })));
