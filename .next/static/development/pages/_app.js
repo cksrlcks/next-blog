@@ -144,42 +144,57 @@ var Nav = function Nav() {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     },
     __self: this
   }, __jsx(_components_logo__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 13
     },
     __self: this
   })))), __jsx("nav", {
     className: "gnb",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 17
     },
     __self: this
-  }, __jsx(_activeLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, __jsx("a", {
+    href: "https://heavybear.cafe24.com/2018/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "2018 ", __jsx("i", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, "\uD3EC\uD2B8\uD3F4\uB9AC\uC624")), __jsx(_activeLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     prefetch: true,
     href: "/blog",
     activeClassName: "active",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 25
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 26
     },
     __self: this
   }, "\uBE14\uB85C\uADF8")), __jsx(_activeLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -188,13 +203,13 @@ var Nav = function Nav() {
     activeClassName: "active",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 28
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 29
     },
     __self: this
   }, "\uACF5\uBD80")), __jsx(_activeLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -203,19 +218,19 @@ var Nav = function Nav() {
     activeClassName: "active",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 31
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 32
     },
     __self: this
   }, "\uC791\uC5C5"))), __jsx(WritePost, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 35
     },
     __self: this
   }, "Write")));
@@ -225,7 +240,7 @@ var Nav = function Nav() {
 var Header = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].header.withConfig({
   displayName: "header__Header",
   componentId: "gpyfz6-0"
-})(["background:#fff;border-bottom:1px solid #eee;font-size:1.14em;.global-inner{display:flex;justify-content:space-between;align-item:center;padding:2em 0 1.8em;transition:all 0.2s ease;@media (max-width:968px){padding:1.8em 1em 1.6em;}@media (max-width:768px){padding:1.6em 1em 1.4em;}nav{line-height:1.8em;display:flex;align-item:center;a{display:block;margin-left:2em;color:#8794A3;transition:color 0.2s;&:hover{color:#435061}&.active{color:rgb(34,184,207);}@media (max-width:768px){font-size:0.95em;}}}}"]);
+})(["background:#fff;border-bottom:1px solid #eee;font-size:1.14em;.global-inner{display:flex;justify-content:space-between;align-item:center;padding:2em 0 1.8em;transition:all 0.2s ease;@media (max-width:968px){padding:1.8em 1em 1.6em;}@media (max-width:768px){padding:1.6em 1em 1.4em;}nav{line-height:1.8em;display:flex;align-item:center;a{display:block;margin-left:2em;color:#8794a3;transition:color 0.2s;&:hover{color:#435061;}&.active{color:rgb(34,184,207);}@media (max-width:768px){font-size:0.95em;}@media (max-width:425px){font-size:0.9em;margin-left:1.3em;}}@media (max-width:500px){i{display:none;}}}}"]);
 var WritePost = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].button.withConfig({
   displayName: "header__WritePost",
   componentId: "gpyfz6-1"
