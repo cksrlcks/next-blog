@@ -1,2 +1,2 @@
 # next-blog
-## next.js, contentful, graphql
+## next.js, contentful
