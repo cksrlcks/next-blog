@@ -1249,39 +1249,22 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
         lineNumber: 79
       },
       __self: this
-    }), __jsx("script", {
-      dangerouslySetInnerHTML: {
-        __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
-              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165367149-1"></script>
-              <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-              
-                gtag('config', 'UA-165367149-1');
-              </script>`
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 83
-      },
-      __self: this
     }), this.props.styleTags), __jsx("body", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98
+        lineNumber: 85
       },
       __self: this
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 99
+        lineNumber: 86
       },
       __self: this
     }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100
+        lineNumber: 87
       },
       __self: this
     })));
