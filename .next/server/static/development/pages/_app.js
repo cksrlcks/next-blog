@@ -2559,11 +2559,11 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 
-next_router__WEBPACK_IMPORTED_MODULE_9___default.a.events.on('routeChangeStart', url => {
+next_router__WEBPACK_IMPORTED_MODULE_9___default.a.events.on("routeChangeStart", url => {
   nprogress__WEBPACK_IMPORTED_MODULE_8___default.a.start();
 });
-next_router__WEBPACK_IMPORTED_MODULE_9___default.a.events.on('routeChangeComplete', () => nprogress__WEBPACK_IMPORTED_MODULE_8___default.a.done());
-next_router__WEBPACK_IMPORTED_MODULE_9___default.a.events.on('routeChangeError', () => nprogress__WEBPACK_IMPORTED_MODULE_8___default.a.done());
+next_router__WEBPACK_IMPORTED_MODULE_9___default.a.events.on("routeChangeComplete", () => nprogress__WEBPACK_IMPORTED_MODULE_8___default.a.done());
+next_router__WEBPACK_IMPORTED_MODULE_9___default.a.events.on("routeChangeError", () => nprogress__WEBPACK_IMPORTED_MODULE_8___default.a.done());
 
 const App = ({
   Component,
@@ -2572,25 +2572,25 @@ const App = ({
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_10___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 21
     },
     __self: undefined
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 22
     },
     __self: undefined
   }, "heavybear blog")), __jsx(_layout_layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: undefined
   }, __jsx(Component, _extends({}, pageProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 25
     },
     __self: undefined
   }))));

@@ -23180,13 +23180,13 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-next_router__WEBPACK_IMPORTED_MODULE_10___default.a.events.on('routeChangeStart', function (url) {
+next_router__WEBPACK_IMPORTED_MODULE_10___default.a.events.on("routeChangeStart", function (url) {
   nprogress__WEBPACK_IMPORTED_MODULE_9___default.a.start();
 });
-next_router__WEBPACK_IMPORTED_MODULE_10___default.a.events.on('routeChangeComplete', function () {
+next_router__WEBPACK_IMPORTED_MODULE_10___default.a.events.on("routeChangeComplete", function () {
   return nprogress__WEBPACK_IMPORTED_MODULE_9___default.a.done();
 });
-next_router__WEBPACK_IMPORTED_MODULE_10___default.a.events.on('routeChangeError', function () {
+next_router__WEBPACK_IMPORTED_MODULE_10___default.a.events.on("routeChangeError", function () {
   return nprogress__WEBPACK_IMPORTED_MODULE_9___default.a.done();
 });
 
@@ -23196,25 +23196,25 @@ var App = function App(_ref) {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_11___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 21
     },
     __self: this
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 22
     },
     __self: this
   }, "heavybear blog")), __jsx(_layout_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: this
   }, __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 25
     },
     __self: this
   }))));
